@@ -408,8 +408,11 @@ footer {
     }
 
     .image-placeholder {
-        height: 350px; /* Much better height for phones */
-        border-radius: 20px; /* Normal rounded corners instead of the large desktop swoop */
+        display: block;
+        width: 100%;
+        height: 350px; 
+        min-height: 350px; 
+        border-radius: 20px; 
         margin-top: 2rem;
     }
 }
