@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Leaf & Beam - Climate resilient construction and interiors. End-to-end passive architecture solutions.">
+    <title>Leaf & Beam | Climate Resilient Architecture</title>
+
+    <!-- Performance: Preconnect to fonts and avoid render blocking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- SEO & Performance -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Accessibility: Skip to content -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <header class="navbar">
+        <div class="logo">Leaf & Beam</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="btn-nav">Book Free Visit</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" tabindex="0"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Semantic HTML: main content -->
+    <main id="main-content">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Climate Resilient <br>Construction & Interiors</h1>
+                <p>End-to-end solutions for any type of building. Passive architecture that conserves natural resources
+                    in an affordable way.</p>
+                <a href="#contact" class="btn-primary">Get a Free Estimation</a>
+            </div>
+            <div class="hero-image">
+                <!-- Accessibility: proper role and aria-label for visual element -->
+                <div class="image-placeholder" role="img" aria-label="Modern passive architecture home exterior"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-container">
+                <h2>Our Philosophy</h2>
+                <p class="subtitle">Harmony with nature, built to last.</p>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Passive Architecture</h3>
+                        <p>We design buildings that naturally maintain a comfortable indoor climate, reducing the need
+                            for active heating or cooling.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Resource Conservation</h3>
+                        <p>Our building techniques prioritize sustainable, locally sourced materials that minimize
+                            environmental impact.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Affordable Luxury</h3>
+                        <p>Premium, high-quality finishes and structural integrity that fit within a practical and
+                            accessible budget.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-container">
+                <h2>End-to-End Solutions</h2>
+                <div class="services-list">
+                    <div class="service-item">
+                        <span class="service-icon">🏗️</span>
+                        <h3>Exteriors & Construction</h3>
+                        <p>From foundation to roof, we build resilient structures designed for your specific climate.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-icon">🛋️</span>
+                        <h3>Interior Design</h3>
+                        <p>Ergonomic, aesthetic, and functional interiors that seamlessly blend with our architectural
+                            vision.</p>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-icon">🌍</span>
+                        <h3>Pan-India Reach</h3>
+                        <p>Wherever you are in India, we provide free site visits and comprehensive estimations.</p>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-icon">🌿</span>
+                        <h3>Sustainable Materials</h3>
+                        <p>We source eco-friendly, durable materials that lower your carbon footprint without
+                            sacrificing quality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h2>Ready to build your dream space?</h2>
+                    <p>Book your <strong>free site visit and estimation</strong> today. Our experts will assess your
+                        location and provide a tailored plan.</p>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="leadForm" class="lead-form">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required minlength="2" pattern="^[A-Za-z\s]+$"
+                                title="Name should contain only letters and spaces" placeholder="John Doe"
+                                autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required pattern="^[0-9]{10}$" maxlength="10"
+                                title="Please enter a valid 10-digit phone number" placeholder="9876543210"
+                                autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Project Location <span class="required">*</span></label>
+                            <input type="text" id="location" name="location" required minlength="2"
+                                title="Location should be at least 2 characters long" placeholder="City, State"
+                                autocomplete="address-level2">
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type <span class="required">*</span></label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select an option</option>
+                                <option value="Residential Construction">Residential Construction</option>
+                                <option value="Commercial Construction">Commercial Construction</option>
+                                <option value="Interiors">Interiors</option>
+                                <option value="End-to-End (Both)">End-to-End (Both)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Details <span class="optional">(Optional)</span></label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us a bit about your requirement..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" id="submitBtn">Submit Request</button>
+                        <p id="formMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Leaf & Beam</div>
+            <p>Climate Resilient Construction | Passive Architecture</p>
+            <div class="footer-contact">
+                <p>📍 Available across India | 📞 +91 9154051671</p>
+            </div>
+            <div class="trust-badges">
+                <span title="SSL Secure">🔒 100% Secure</span>
+                <span title="Guaranteed Quality">✅ ISO Certified Quality</span>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy-policy">Privacy Policy</a> |
+                <a href="/terms-of-service">Terms of Service</a>
+            </div>
+            <p class="copyright">&copy; 2026 Leaf & Beam. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
