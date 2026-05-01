@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Central Architectural Beam -->
+  <rect x="42" y="15" width="16" height="70" fill="#2E3C30" rx="2" />
+  <!-- Right Ascending Leaf -->
+  <path d="M58 45 C 85 45, 95 20, 95 20 C 95 20, 70 10, 58 45 Z" fill="#658B6A" />
+  <!-- Left Descending Leaf -->
+  <path d="M42 65 C 15 65, 5 40, 5 40 C 5 40, 30 30, 42 65 Z" fill="#A3B5A6" />
+</svg>
