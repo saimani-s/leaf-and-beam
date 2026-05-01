@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 // With no-cors, we assume success if no network error is thrown
-                formMessage.textContent = "Thank you! Your details have been saved directly to Excel.";
+                formMessage.textContent = "Thank you! We'll get back to you shortly.";
                 formMessage.classList.add('success');
                 leadForm.reset();
             } catch (error) {
