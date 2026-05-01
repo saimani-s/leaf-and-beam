@@ -68,4 +68,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Dynamic tab title
+    let previousTitle = document.title;
+    window.addEventListener('blur', () => {
+        previousTitle = document.title;
+        document.title = '🌱 Please visit again!';
+    });
+    window.addEventListener('focus', () => {
+        document.title = previousTitle;
+    });
 });
