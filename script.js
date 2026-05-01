@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleMenu() {
         navLinks.classList.toggle('active');
         const isExpanded = navLinks.classList.contains('active');
-        if(hamburger) hamburger.setAttribute('aria-expanded', isExpanded);
+        if (hamburger) hamburger.setAttribute('aria-expanded', isExpanded);
     }
 
     if (hamburger) {
@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submitBtn');
     const formMessage = document.getElementById('formMessage');
 
-    // Local backend URL for saving to Excel
-    const SUBMIT_URL = '/submit';
+    // Formspree endpoint
+    const SUBMIT_URL = 'https://formspree.io/f/mkoygrgr'; // Replace YOUR_FORM_ID with your actual Formspree ID
 
     if (leadForm) {
         leadForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             // Basic UI feedback
             const originalBtnText = submitBtn.textContent;
             submitBtn.textContent = 'Submitting...';
@@ -45,17 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
             formMessage.className = 'form-message';
             formMessage.textContent = '';
 
-            // Gather form data into an object
             const formData = new FormData(leadForm);
-            const data = Object.fromEntries(formData.entries());
-            
+
             try {
                 const response = await fetch(SUBMIT_URL, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Accept': 'application/json'
                     },
-                    body: JSON.stringify(data)
+                    body: formData
                 });
 
                 if (response.ok) {
