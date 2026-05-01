@@ -406,6 +406,12 @@ footer {
     h1 {
         font-size: 2.8rem;
     }
+
+    .image-placeholder {
+        height: 350px; /* Much better height for phones */
+        border-radius: 20px; /* Normal rounded corners instead of the large desktop swoop */
+        margin-top: 2rem;
+    }
 }
 
 /* Accessibility: Skip link */
