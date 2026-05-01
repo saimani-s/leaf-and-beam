@@ -67,15 +67,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.disabled = false;
             }
         });
-    }
-
-    // Dynamic tab title
+    // Dynamic scrolling tab title
     let previousTitle = document.title;
+    let scrollInterval;
+
     window.addEventListener('blur', () => {
         previousTitle = document.title;
-        document.title = '🌱 Please visit again!';
+        let scrollText = "Please visit again! • ";
+        
+        scrollInterval = setInterval(() => {
+            scrollText = scrollText.substring(1) + scrollText[0];
+            document.title = scrollText;
+        }, 250); // Speed of the scroll (lower = faster)
     });
+
     window.addEventListener('focus', () => {
+        clearInterval(scrollInterval);
         document.title = previousTitle;
     });
 });
+
