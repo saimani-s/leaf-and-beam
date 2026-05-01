@@ -235,6 +235,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2vh;
 }
 
 .services-list {
