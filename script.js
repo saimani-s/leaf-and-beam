@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.disabled = false;
             }
         });
+    }
+
     // Dynamic scrolling tab title (Left to Right)
     let previousTitle = document.title;
     let scrollInterval;
