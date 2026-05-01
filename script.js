@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.disabled = false;
             }
         });
-    // Dynamic scrolling tab title
+    // Dynamic scrolling tab title (Left to Right)
     let previousTitle = document.title;
     let scrollInterval;
 
@@ -76,9 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let scrollText = "Please visit again! • ";
         
         scrollInterval = setInterval(() => {
-            scrollText = scrollText.substring(1) + scrollText[0];
+            // Move last character to the front to scroll left-to-right
+            scrollText = scrollText.slice(-1) + scrollText.slice(0, -1);
             document.title = scrollText;
-        }, 250); // Speed of the scroll (lower = faster)
+        }, 250); 
     });
 
     window.addEventListener('focus', () => {
@@ -86,4 +87,5 @@ document.addEventListener('DOMContentLoaded', () => {
         document.title = previousTitle;
     });
 });
+
 
