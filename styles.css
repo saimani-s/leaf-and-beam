@@ -240,7 +240,17 @@ a {
 }
 
 .service-item {
+    padding: 2.5rem;
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .service-icon {
