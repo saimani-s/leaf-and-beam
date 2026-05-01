@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submitBtn');
     const formMessage = document.getElementById('formMessage');
 
-    // Formspree endpoint
-    const SUBMIT_URL = 'https://formspree.io/f/mkoygrgr'; // Replace YOUR_FORM_ID with your actual Formspree ID
+    // Google Apps Script endpoint
+    const SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbwEc2R9w0xW8FoXpppeF10DTa9x6m4m9geUOSq-ILKjNTGq76buXGJDlhhaPpuhwW_WPA/exec';
 
     if (leadForm) {
         leadForm.addEventListener('submit', async (e) => {
@@ -48,24 +48,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(leadForm);
 
             try {
-                const response = await fetch(SUBMIT_URL, {
+                await fetch(SUBMIT_URL, {
                     method: 'POST',
-                    headers: {
-                        'Accept': 'application/json'
-                    },
-                    body: formData
+                    body: formData,
+                    mode: 'no-cors'
                 });
 
-                if (response.ok) {
-                    formMessage.textContent = "Thank you! We'll get back to you shortly.";
-                    formMessage.classList.add('success');
-                    leadForm.reset();
-                } else {
-                    throw new Error('Network response was not ok');
-                }
+                // With no-cors, we assume success if no network error is thrown
+                formMessage.textContent = "Thank you! Your details have been saved directly to Excel.";
+                formMessage.classList.add('success');
+                leadForm.reset();
             } catch (error) {
                 console.warn(error);
-                formMessage.textContent = 'Oops! Something went wrong. Make sure the local server is running.';
+                formMessage.textContent = 'Oops! Something went wrong. Please try again.';
                 formMessage.classList.add('error');
             } finally {
                 submitBtn.textContent = originalBtnText;
