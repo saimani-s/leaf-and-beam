@@ -18,6 +18,14 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (min-width: 768px) {
+    html {
+        zoom: 0.9;
+        -moz-transform: scale(0.9);
+        -moz-transform-origin: top center;
+    }
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
