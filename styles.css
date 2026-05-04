@@ -284,13 +284,15 @@ a {
 
 
 .process-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
     width: 100%;
 }
 
 .process-card {
+    flex: 0 0 calc(20% - 1.2rem);
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
@@ -307,8 +309,34 @@ a {
     overflow: visible;
 }
 
+/* Decorative Leaf Branding on Cards */
+.process-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" stroke="%23A3B5A6" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L12 22"/><path d="M12 2C8 2 4 6 4 10C4 14 12 22 12 22C12 22 20 14 20 10C20 6 16 2 12 2Z"/></svg>');
+    opacity: 0.6;
+    z-index: 0;
+}
+
+/* Connection S-Curve */
+.process-connection {
+    flex: 0 0 100%;
+    height: 80px;
+    margin: 10px 0;
+}
+
+.s-curve-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 /* Elegant right arrows between horizontal cards */
-.process-card:not(:nth-child(5n)):not(:last-child)::after {
+.process-card:not(:nth-child(5)):not(:last-child)::after {
     content: '→';
     position: absolute;
     top: 50%;
@@ -644,17 +672,19 @@ footer {
     }
 
     .process-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
     }
 
     .process-card {
+        flex: 0 0 auto;
         width: 100%;
-        max-width: none;
+        max-width: 400px;
         aspect-ratio: auto;
         padding: 2rem;
     }
 
-    .process-card::after {
+    .process-card::after, .process-connection {
         display: none;
     }
 }
