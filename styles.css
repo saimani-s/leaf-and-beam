@@ -292,14 +292,14 @@ a {
 
 .process-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
     width: 100%;
 }
 
 .process-card {
-    padding: 2.5rem;
-    background-color: var(--white);
+    padding: 2rem 1.5rem;
+    background-color: var(--bg-color);
     border-radius: 12px;
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -629,7 +629,11 @@ footer {
         display: flex;
     }
 
-    .top-row .process-card, .bottom-row .process-card {
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-card {
         width: 100%;
         max-width: none;
     }
