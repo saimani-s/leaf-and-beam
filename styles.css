@@ -146,7 +146,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
+    min-height: 112vh;
     padding: 6rem 5% 0;
     max-width: 1400px;
     margin: 0 auto;
@@ -572,13 +572,16 @@ footer {
         gap: 3rem;
     }
 
-    .top-row .process-card, .bottom-row .process-card {
+    .top-row .process-card,
+    .bottom-row .process-card {
         width: 45%;
         max-width: 300px;
     }
 
     /* Hide horizontal arrows and S-curve on mobile/tablet wrapping */
-    .process-card::after, .process-card::before, .s-curve-wrapper {
+    .process-card::after,
+    .process-card::before,
+    .s-curve-wrapper {
         display: none !important;
     }
 
@@ -692,7 +695,8 @@ footer {
         padding: 2rem;
     }
 
-    .process-card::after, .process-connection {
+    .process-card::after,
+    .process-connection {
         display: none;
     }
 }
