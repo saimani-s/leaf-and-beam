@@ -255,6 +255,108 @@ a {
     margin-bottom: 1rem;
 }
 
+/* Process Section */
+.process {
+    background-color: #F8F5F0;
+    padding: 6rem 0;
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.process-header h2 {
+    font-size: 2.5rem;
+    color: #4A5D4E;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.script-font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5rem;
+    color: #4A5D4E;
+    text-transform: none;
+    display: block;
+    margin-top: -1.5rem;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3.5rem 2rem;
+    padding-top: 2rem;
+}
+
+.process-card {
+    border: 1px solid #A3B5A6;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 3rem 1.5rem 2.5rem;
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.process-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4A5D4E;
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.process-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.process-card h3 {
+    font-size: 0.95rem;
+    color: #2E3C30;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    min-height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.process-divider {
+    width: 30px;
+    height: 2px;
+    background-color: #4A5D4E;
+    margin: 0 auto 1.5rem;
+}
+
+.process-card p {
+    font-size: 0.85rem;
+    color: #4A5D4E;
+    line-height: 1.6;
+}
+
 /* Contact */
 .contact {
     background-color: var(--primary-color);

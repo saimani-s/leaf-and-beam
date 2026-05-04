@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <!-- Embeds the exact font from the website so it always looks correct -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&amp;display=swap');
+      .logo-text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 100px;
+        fill: #2E3C30; /* The exact dark green color from the website */
+      }
+    </style>
+  </defs>
+  
+  <!-- The perfectly centered text -->
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" class="logo-text">Leaf &amp; Beam</text>
+</svg>
