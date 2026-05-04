@@ -295,26 +295,91 @@ a {
     margin-top: -1.5rem;
 }
 
-.process-grid {
+.process-layout-custom {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3.5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
     padding-top: 2rem;
 }
 
+.process-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.top-row {
+    gap: 2.5rem;
+    margin-bottom: 0; /* Gap managed by S curve */
+}
+
+.bottom-row {
+    gap: 1.5rem; /* Tighter gap for 5 items */
+}
+
+.s-curve-wrapper {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+}
+
+.s-curve-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 .process-card {
-    flex: 0 1 260px;
     border: 1px solid #A3B5A6;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    padding: 3rem 1.5rem 2.5rem;
+    padding: 3rem 1.2rem 2rem;
     position: relative;
     text-align: center;
     background-color: transparent;
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.top-row .process-card {
+    width: 250px;
+}
+
+.bottom-row .process-card {
+    width: 220px;
+}
+
+/* Connecting Dashed Arrows */
+.process-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1.7rem; 
+    width: 1.2rem;
+    height: 1px;
+    border-bottom: 2px dashed #4A5D4E;
+    z-index: 1;
+}
+
+.process-card::before {
+    content: '▶';
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: translateY(-50%);
+    color: #4A5D4E;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+/* Remove arrow from the last card in each row */
+.top-row .process-card:last-child::after,
+.top-row .process-card:last-child::before,
+.bottom-row .process-card:last-child::after,
+.bottom-row .process-card:last-child::before {
+    display: none;
 }
 
 .process-card:hover {
@@ -340,10 +405,12 @@ a {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.process-icon {
-    font-size: 2.5rem;
+.process-icon-svg {
+    width: 50px;
+    height: 50px;
+    color: #4A5D4E;
+    margin: 0 auto 1.5rem;
     display: block;
-    margin-bottom: 1rem;
 }
 
 .process-card h3 {
@@ -529,6 +596,21 @@ footer {
         gap: 2rem;
     }
 
+    .process-row {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .top-row .process-card, .bottom-row .process-card {
+        width: 45%;
+        max-width: 300px;
+    }
+
+    /* Hide horizontal arrows and S-curve on mobile/tablet wrapping */
+    .process-card::after, .process-card::before, .s-curve-wrapper {
+        display: none !important;
+    }
+
     .image-placeholder {
         display: block;
         width: 100%;
@@ -624,5 +706,10 @@ footer {
 
     .hamburger {
         display: flex;
+    }
+
+    .top-row .process-card, .bottom-row .process-card {
+        width: 100%;
+        max-width: none;
     }
 }
