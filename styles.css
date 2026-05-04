@@ -235,14 +235,26 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
 
+.services .section-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.services h2 {
+    flex: 1;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 0;
 }
 
 .services-list {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    margin-top: 3rem;
+    gap: 2rem;
 }
 
 .service-item {
@@ -284,13 +296,15 @@ a {
 }
 
 .process-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 3.5rem 2rem;
     padding-top: 2rem;
 }
 
 .process-card {
+    flex: 0 1 260px;
     border: 1px solid #A3B5A6;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -507,6 +521,12 @@ footer {
 
     h1 {
         font-size: 2.8rem;
+    }
+
+    .services .section-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
     }
 
     .image-placeholder {
