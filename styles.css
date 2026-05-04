@@ -293,7 +293,7 @@ a {
 .process-row {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 3rem;
     width: 100%;
 }
 
@@ -318,14 +318,14 @@ a {
 }
 
 .process-card {
-    flex: 1 1 190px;
-    max-width: 215px;
+    flex: 1 1 200px;
+    max-width: 220px;
     border: 1px solid #A3B5A6;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    padding: 3rem 1rem 2rem;
+    padding: 3rem 1.2rem 2rem;
     position: relative;
     text-align: center;
     background-color: transparent;
