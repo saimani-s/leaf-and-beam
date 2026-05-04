@@ -293,16 +293,16 @@ a {
 .process-row {
     display: flex;
     justify-content: center;
+    gap: 1.5rem;
     width: 100%;
 }
 
 .top-row {
-    gap: 2.5rem;
-    margin-bottom: 0; /* Gap managed by S curve */
+    margin-bottom: 0;
 }
 
 .bottom-row {
-    gap: 1.5rem; /* Tighter gap for 5 items */
+    margin-top: 0;
 }
 
 .s-curve-wrapper {
@@ -318,24 +318,18 @@ a {
 }
 
 .process-card {
+    flex: 1 1 190px;
+    max-width: 215px;
     border: 1px solid #A3B5A6;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    padding: 3rem 1.2rem 2rem;
+    padding: 3rem 1rem 2rem;
     position: relative;
     text-align: center;
     background-color: transparent;
     transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.top-row .process-card {
-    width: 250px;
-}
-
-.bottom-row .process-card {
-    width: 220px;
 }
 
 /* Connecting Dashed Arrows */
