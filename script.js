@@ -5,8 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function toggleMenu() {
         navLinks.classList.toggle('active');
-        const isExpanded = navLinks.classList.contains('active');
-        if (hamburger) hamburger.setAttribute('aria-expanded', isExpanded);
+        if (hamburger) {
+            hamburger.classList.toggle('active');
+            const isExpanded = navLinks.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+        }
     }
 
     if (hamburger) {
@@ -23,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
+            if (hamburger) {
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
         });
     });
 
