@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formMessage = document.getElementById('formMessage');
 
     // Google Apps Script endpoint
-    const SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbxCvIQb39FaFV63hMObnRtAJs42Qb2cZhAaHR_-Xwr9aK0PLKQFQO8oQjYxNwrE7Vhu/exec';
+    const SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbwmHqlytXnBGSKdBUYmUA5N8OUtGd4SJ9dd6YY2VHepm_3ulQhQT8d1pq4SiWbLxXDl/exec';
 
     if (leadForm) {
         leadForm.addEventListener('submit', async (e) => {
