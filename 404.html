@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found | Leaf & Beam</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css?v=3">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet">
     <style>
-        .error-container { text-align: center; padding: 10rem 2rem; min-height: 80vh; }
-        .error-container h1 { font-size: 5rem; color: var(--primary-color); margin-bottom: 1rem; }
-        .error-container p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .error-container {
+            text-align: center;
+            padding: 10rem 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg-color);
+        }
+
+        .error-container h1 {
+            font-size: 6rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .error-container p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            color: #4A554C;
+        }
     </style>
 </head>
+
 <body>
     <header class="navbar">
-        <div class="logo"><a href="/">Leaf & Beam</a></div>
+        <div class="navbar-container">
+            <div class="logo"><a href="index.html" style="color: var(--primary-color); hover: opacity: 0.8;">Leaf & Beam</a></div>
+        </div>
     </header>
     <main class="error-container">
         <h1>404</h1>
-        <p>Oops! The page you are looking for doesn't exist.</p>
-        <a href="/" class="btn-primary">Return to Home</a>
+        <p>Oops! The page you are looking for doesn't exist or has been moved.</p>
+        <a href="index.html" class="btn-primary">Return to Home</a>
     </main>
 </body>
+
 </html>
