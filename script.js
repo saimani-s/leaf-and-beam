@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formMessage = document.getElementById('formMessage');
 
     // Google Apps Script endpoint
-    const SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbwEc2R9w0xW8FoXpppeF10DTa9x6m4m9geUOSq-ILKjNTGq76buXGJDlhhaPpuhwW_WPA/exec';
+    const SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbxCvIQb39FaFV63hMObnRtAJs42Qb2cZhAaHR_-Xwr9aK0PLKQFQO8oQjYxNwrE7Vhu/exec';
 
     if (leadForm) {
         leadForm.addEventListener('submit', async (e) => {
@@ -83,12 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('blur', () => {
         previousTitle = document.title;
         let scrollText = "Please visit again! • ";
-        
+
         scrollInterval = setInterval(() => {
             // Move last character to the front to scroll left-to-right
             scrollText = scrollText.slice(-1) + scrollText.slice(0, -1);
             document.title = scrollText;
-        }, 250); 
+        }, 250);
     });
 
     window.addEventListener('focus', () => {
