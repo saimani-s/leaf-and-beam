@@ -1,342 +1,2753 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Leaf & Beam offers end-to-end climate resilient construction and interiors in India. Sustainable passive architecture solutions that conserve resources affordably.">
-    <title>Leaf & Beam | Climate Resilient Construction & Passive Architecture</title>
-    <link rel="canonical" href="https://www.leafandbeam.com/">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-    <!-- Open Graph / Facebook -->
+    <title>Hellooo! 👾 Thankyou  visit again! 🎮 </title>
+    <!-- Gamified 8-Bit Pixel Controller Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' style='image-rendering:pixelated;shape-rendering:crispEdges;'%3E%3Crect x='2' y='4' width='12' height='8' fill='%23121824' rx='2' stroke='%2300f0ff' stroke-width='1.5'/%3E%3Crect x='4' y='7' width='3' height='2' fill='%233cd070'/%3E%3Crect x='5' y='6' width='1' height='4' fill='%233cd070'/%3E%3Ccircle cx='10.5' cy='7.5' r='1' fill='%23ff007f'/%3E%3Ccircle cx='12' cy='8.5' r='1' fill='%23ffcc00'/%3E%3Crect x='7' y='5' width='2' height='1' fill='%23fff' opacity='0.7'/%3E%3C/svg%3E">
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Portfolio of Saimani Singirikonda, Software Engineer. High-availability backends with Java, Spring Boot, GCP, OpenShift, and AI integration (GPT-4, AWS, Python).">
+    <meta name="keywords" content="Saimani Singirikonda, Software Engineer, AI Specialist, Java, Spring Boot, GCP, BigQuery, AWS Lambda, OpenShift, microservices, GPT-4, Claude, LLM, REST API">
+    <meta name="author" content="Saimani Singirikonda">
+    <meta property="og:title" content="Saimani Singirikonda | Software Engineer & AI Specialist">
+    <meta property="og:description" content="Explore my 8-bit retro interactive dev portfolio. Powered by Java, Spring Boot, Cloud, and AI.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.leafandbeam.com/">
-    <meta property="og:title" content="Leaf & Beam | Climate Resilient Construction & Passive Architecture">
-    <meta property="og:description" content="Leaf & Beam offers end-to-end climate resilient construction and interiors in India. Sustainable passive architecture solutions that conserve resources affordably.">
-    <meta property="og:image" content="https://www.leafandbeam.com/Leaf-and-Beam-Logo.svg">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.leafandbeam.com/">
-    <meta property="twitter:title" content="Leaf & Beam | Climate Resilient Construction & Passive Architecture">
-    <meta property="twitter:description" content="Leaf & Beam offers end-to-end climate resilient construction and interiors in India. Sustainable passive architecture solutions that conserve resources affordably.">
-    <meta property="twitter:image" content="https://www.leafandbeam.com/Leaf-and-Beam-Logo.svg">
-
-    <!-- Performance: Preconnect to fonts and avoid render blocking -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=3">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-    <!-- SEO & Performance -->
-    <script src="script.js?v=2" defer></script>
+    <style>
+        /* CSS RESET & CUSTOM PROPERTIES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            image-rendering: pixelated;
+        }
+
+        :root {
+            --bg-color: #0b0f19;
+            --panel-bg: #121824;
+            --accent-cyan: #00f0ff;
+            --accent-pink: #ff007f;
+            --accent-yellow: #ffcc00;
+            --border-color: #000000;
+            --text-color: #e2e8f0;
+            --text-muted: #94a3b8;
+            
+            --pixel-border: 4px solid var(--border-color);
+            --shadow-3d: 8px 8px 0px var(--border-color);
+            --shadow-active: 0px 0px 0px var(--border-color);
+            --shadow-hover: 4px 4px 0px var(--border-color);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                linear-gradient(to right, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--text-color);
+            line-height: 1.5;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* CRT SCANLINES & OVERLAY EFFECT */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 255, 0, 0.06));
+            background-size: 100% 4px, 6px 100%;
+            z-index: 99999;
+            pointer-events: none;
+        }
+        
+        .crt-scanlines {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(18, 16, 16, 0);
+            z-index: 99998;
+            pointer-events: none;
+            opacity: 0.15;
+            animation: crt-flicker 0.15s infinite;
+        }
+
+        @keyframes crt-flicker {
+            0% { opacity: 0.15; }
+            50% { opacity: 0.12; }
+            100% { opacity: 0.16; }
+        }
+
+        /* RETRO CONTAINER LAYOUT */
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* ARCADE TOP HEADER */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: var(--panel-bg);
+            border: var(--pixel-border);
+            box-shadow: var(--shadow-3d);
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            header {
+                flex-direction: row;
+                text-align: left;
+            }
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-icon {
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .logo-text h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.4rem;
+            color: var(--accent-cyan);
+            text-shadow: 3px 3px 0px #000;
+            margin-bottom: 6px;
+        }
+
+        .logo-text p {
+            font-size: 0.95rem;
+            color: var(--accent-pink);
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        /* SOUNDS & OPTION TOGGLES */
+        .header-controls {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .header-controls {
+                margin-top: 0;
+            }
+        }
+
+        /* BUTTONS DESIGN */
+        .retro-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.7rem;
+            padding: 12px 18px;
+            background: #253046;
+            color: #fff;
+            border: var(--pixel-border);
+            box-shadow: 4px 4px 0px #000;
+            cursor: pointer;
+            outline: none;
+            transition: transform 0.05s ease, box-shadow 0.05s ease;
+            user-select: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .retro-btn:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #000;
+            background: #2d3b56;
+        }
+
+        .retro-btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px #000;
+        }
+
+        .retro-btn.cyan-btn {
+            background: var(--accent-cyan);
+            color: #000;
+        }
+        .retro-btn.cyan-btn:hover {
+            background: #33f3ff;
+        }
+
+        .retro-btn.pink-btn {
+            background: var(--accent-pink);
+            color: #fff;
+        }
+        .retro-btn.pink-btn:hover {
+            background: #ff3399;
+        }
+
+        .retro-btn.yellow-btn {
+            background: var(--accent-yellow);
+            color: #000;
+        }
+        .retro-btn.yellow-btn:hover {
+            background: #ffe066;
+        }
+
+        /* MAIN GRID SYSTEM */
+        .game-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 992px) {
+            .game-grid {
+                grid-template-columns: 400px 1fr;
+            }
+        }
+
+        /* RETRO CARDS AND PANELS */
+        .retro-panel {
+            background: var(--panel-bg);
+            border: var(--pixel-border);
+            box-shadow: var(--shadow-3d);
+            padding: 24px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .retro-panel-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+            border-bottom: 4px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* 1. HERO STATS PANEL */
+        .hero-stats-card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .character-portrait-box {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            background: #1a2333;
+            border: 4px solid #000;
+            padding: 12px;
+        }
+
+        .pixel-avatar-container {
+            width: 80px;
+            height: 80px;
+            background: #0d131f;
+            border: 2px solid var(--accent-pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pixel-avatar-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none; /* Dynamic Javascript control */
+        }
+
+        .char-level-badge {
+            position: absolute;
+            bottom: -6px;
+            right: -6px;
+            background: var(--accent-yellow);
+            color: #000;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            padding: 4px 6px;
+            border: 2px solid #000;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .char-name-title h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.9rem;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        
+        .char-name-title p {
+            color: var(--accent-cyan);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        /* STATS PROGRESS BARS */
+        .status-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .status-bar-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+        }
+
+        .status-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            width: 30px;
+            cursor: help;
+        }
+
+        .status-bar-outer {
+            flex-grow: 1;
+            height: 20px;
+            background: #080d16;
+            border: 3px solid #000;
+            position: relative;
+        }
+
+        .status-bar-inner {
+            height: 100%;
+            background: var(--accent-pink);
+            width: 100%;
+            transition: width 0.3s ease;
+        }
+
+        .status-bar-inner.mp {
+            background: var(--accent-cyan);
+        }
+
+        .status-bar-inner.xp {
+            background: var(--accent-yellow);
+        }
+
+        .status-val {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.5rem;
+            color: #fff;
+            text-shadow: 1px 1px 0px #000;
+        }
+
+        /* RPG ATTRIBUTES list */
+        .rpg-attributes {
+            background: #172030;
+            border: 3px solid #000;
+            padding: 12px;
+        }
+
+        .rpg-attribute-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            padding: 6px 0;
+            border-bottom: 1px dashed #2d3b56;
+        }
+        
+        .rpg-attribute-row:last-child {
+            border-bottom: none;
+        }
+
+        .rpg-attr-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            color: var(--text-muted);
+        }
+
+        .rpg-attr-val {
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        /* 2. INVENTORY PANEL (SKILLS) */
+        .inventory-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .inventory-slot {
+            aspect-ratio: 1;
+            background: #1a2333;
+            border: 3px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.05s ease, border-color 0.1s ease;
+            position: relative;
+        }
+
+        .inventory-slot:hover {
+            transform: scale(1.05);
+            border-color: var(--accent-cyan);
+        }
+
+        .inventory-slot.equipped {
+            border-color: var(--accent-pink);
+        }
+
+        .inventory-slot.equipped::after {
+            content: "E";
+            position: absolute;
+            top: 2px;
+            right: 4px;
+            color: var(--accent-pink);
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.5rem;
+            font-weight: bold;
+        }
+
+        .inventory-slot svg {
+            width: 60%;
+            height: 60%;
+            transition: transform 0.2s ease;
+        }
+
+        .inventory-slot:hover svg {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        /* INVENTORY DETAILS BOX */
+        .inventory-details-box {
+            background: #0d131f;
+            border: 3px solid #000;
+            padding: 16px;
+            min-height: 160px;
+        }
+
+        .item-details-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px dashed #1a2333;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+
+        .item-name {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-yellow);
+        }
+
+        .item-type {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-pink);
+            background: rgba(255, 0, 127, 0.1);
+            padding: 2px 6px;
+            border: 1px solid var(--accent-pink);
+        }
+
+        .item-stats {
+            color: var(--accent-cyan);
+            font-size: 0.8rem;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .item-desc {
+            color: var(--text-color);
+            font-size: 0.88rem;
+            line-height: 1.4;
+        }
+
+        /* 3. QUEST LOG (EXPERIENCE) */
+        .quest-log-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .quest-card {
+            background: #172030;
+            border: 3px solid #000;
+            padding: 16px;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .quest-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .quest-title-sub {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quest-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.75rem;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .quest-company {
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        .quest-date {
+            font-size: 0.8rem;
+            color: var(--accent-yellow);
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .quest-objectives-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            color: var(--accent-pink);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .objective-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .objective-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.88rem;
+            color: var(--text-color);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        /* CUSTOM RETRO CHECKBOX */
+        .pixel-checkbox {
+            width: 18px;
+            height: 18px;
+            background: #0d131f;
+            border: 2px solid #000;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+            position: relative;
+        }
+
+        .pixel-checkbox::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: var(--accent-cyan);
+            display: none;
+        }
+
+        .objective-item.completed .pixel-checkbox::after {
+            display: block;
+        }
+
+        .objective-item.completed {
+            text-decoration: line-through;
+            color: var(--text-muted);
+        }
+
+        .quest-rewards {
+            margin-top: 14px;
+            padding-top: 10px;
+            border-top: 1px dashed #2d3b56;
+            display: flex;
+            gap: 16px;
+            font-size: 0.75rem;
+            font-family: 'Press Start 2P', monospace;
+            color: var(--accent-yellow);
+        }
+
+        /* FLOATING TEXT ANIMATION FOR XP */
+        .xp-float {
+            position: absolute;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.7rem;
+            color: var(--accent-yellow);
+            pointer-events: none;
+            z-index: 1000;
+            animation: floatUpFade 1.2s ease-out forwards;
+            text-shadow: 2px 2px 0px #000;
+        }
+
+        @keyframes floatUpFade {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+        }
+
+        /* BOSS BATTLE MINI-GAME */
+        .boss-game-box {
+            background: #070a10;
+            border: 4px solid #000;
+            padding: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .boss-arena {
+            height: 200px;
+            border-bottom: 4px solid #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 20px;
+            background: linear-gradient(to bottom, #111a2e 0%, #070a10 100%);
+            position: relative;
+        }
+
+        /* Boss Battle Grid Overlay */
+        .boss-arena::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: linear-gradient(rgba(0,240,255,0.02) 1px, transparent 1px);
+            background-size: 100% 20px;
+            pointer-events: none;
+        }
+
+        .battle-actor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .actor-sprite {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: breathe 1.5s ease-in-out infinite alternate;
+        }
+
+        .actor-sprite.boss-sprite {
+            animation: bossHover 3s ease-in-out infinite alternate;
+        }
+
+        .actor-stats-bubble {
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #fff;
+            padding: 4px 8px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.45rem;
+            text-align: center;
+            margin-top: 8px;
+            width: 120px;
+        }
+
+        .actor-stats-bubble.boss-stats {
+            border-color: var(--accent-pink);
+        }
+
+        .actor-stats-bubble.hero-stats {
+            border-color: var(--accent-cyan);
+        }
+
+        .hp-bar-outer {
+            width: 100%;
+            height: 10px;
+            background: #333;
+            border: 1px solid #000;
+            margin-top: 4px;
+        }
+
+        .hp-bar-inner {
+            height: 100%;
+            background: var(--accent-pink);
+            width: 100%;
+            transition: width 0.2s ease;
+        }
+
+        .hp-bar-inner.cyan {
+            background: var(--accent-cyan);
+        }
+
+        /* Battle Spells Animations classes */
+        .flash-red {
+            animation: flashRedFx 0.3s ease-in-out;
+        }
+        
+        .flash-cyan {
+            animation: flashCyanFx 0.3s ease-in-out;
+        }
+
+        @keyframes flashRedFx {
+            0%, 100% { background: transparent; }
+            50% { background: rgba(255, 0, 85, 0.4); }
+        }
+
+        @keyframes flashCyanFx {
+            0%, 100% { background: transparent; }
+            50% { background: rgba(0, 240, 255, 0.4); }
+        }
+
+        /* Action Menu */
+        .boss-controls {
+            padding-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .boss-actions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        @media (min-width: 576px) {
+            .boss-actions-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .combat-log-box {
+            background: #04060b;
+            border: 2px solid #000;
+            padding: 10px;
+            height: 80px;
+            overflow-y: auto;
+            font-size: 0.8rem;
+            color: #a3e635;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .log-entry {
+            margin-bottom: 4px;
+            border-left: 3px solid var(--accent-cyan);
+            padding-left: 8px;
+        }
+
+        /* DYNAMIC PROJECT SELECTOR (LEGENDARY ARTIFACTS) */
+        .project-gear-picker {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .project-gear-picker {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .project-gear-btn {
+            background: #1e293b;
+            border: 3px solid #000;
+            padding: 12px 6px;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.5rem;
+            text-align: center;
+            box-shadow: 4px 4px 0px #000;
+            transition: transform 0.05s ease, box-shadow 0.05s ease;
+        }
+
+        .project-gear-btn:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #000;
+            border-color: var(--accent-cyan);
+        }
+
+        .project-gear-btn.active {
+            background: var(--accent-yellow);
+            color: #000;
+            border-color: #000;
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #000;
+        }
+
+        .project-inspect-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px dashed #2d3b56;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+
+        .project-inspect-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dashed #2d3b56;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+        }
+
+        .project-inspect-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-yellow);
+        }
+        
+        .project-inspect-tech {
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        .project-inspect-desc {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            line-height: 1.4;
+        }
+
+        /* 5. INTERACTIVE CRT TERMINAL FOOTER */
+        .crt-terminal-panel {
+            background: #050b14;
+            border: var(--pixel-border);
+            box-shadow: var(--shadow-3d);
+            padding: 20px;
+            font-family: 'Share Tech Mono', monospace;
+            position: relative;
+            color: #39ff14; /* Matrix Green */
+        }
+
+        .crt-terminal-panel::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle, rgba(0, 255, 0, 0.05) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #0f3014;
+            padding-bottom: 6px;
+            margin-bottom: 12px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            color: #0fbc0f;
+        }
+
+        .terminal-body {
+            height: 200px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 12px;
+            padding-right: 6px;
+        }
+
+        .terminal-input-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terminal-prompt {
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        .terminal-input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #39ff14;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1rem;
+            flex-grow: 1;
+        }
+
+        /* CONTACT BEACON BOARD */
+        .contact-beacon-panel {
+            background: #172030;
+            border: 3px solid #000;
+            padding: 16px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        @media (min-width: 576px) {
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* CUSTOM SCROLLBARS */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080d16;
+            border-left: 2px solid #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #172030;
+            border: 2px solid #000;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-pink);
+        }
+
+        /* ANIMATIONS DEFINITIONS */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        @keyframes breathe {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        @keyframes bossHover {
+            0% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-6px) scale(0.98) rotate(1deg); }
+            100% { transform: translateY(4px) scale(1.02) rotate(-1deg); }
+        }
+
+        .boss-hit-shake {
+            animation: hitShake 0.4s ease-in-out;
+        }
+
+        @keyframes hitShake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-8px); }
+            40%, 80% { transform: translateX(8px); }
+        }
+
+        /* SCREEN FLASH LEVEL UP POPUP */
+        .level-up-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 10px double var(--accent-yellow);
+        }
+
+        .level-up-overlay h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 2.2rem;
+            color: var(--accent-yellow);
+            margin-bottom: 20px;
+            animation: logo-flash 0.5s step-start infinite;
+            text-align: center;
+        }
+
+        @keyframes logo-flash {
+            0%, 100% { color: var(--accent-yellow); text-shadow: 4px 4px 0px #000; }
+            50% { color: var(--accent-pink); text-shadow: 4px 4px 0px #fff; }
+        }
+
+        .level-up-stats {
+            background: #111a2e;
+            border: 4px solid #000;
+            box-shadow: 8px 8px 0px var(--accent-cyan);
+            padding: 24px;
+            width: 320px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        /* CONTACT MODAL OVERLAY */
+        .contact-modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(11, 15, 25, 0.95);
+            z-index: 10002;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .contact-modal-content {
+            background: var(--panel-bg);
+            border: 8px solid #000;
+            box-shadow: 8px 8px 0px var(--accent-yellow);
+            padding: 28px;
+            max-width: 440px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--text-color);
+            position: relative;
+            text-align: center;
+        }
+
+        .contact-header {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+            text-shadow: 2px 2px 0px #000;
+            border-bottom: 4px solid #000;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .contact-channel-row {
+            background: #172030;
+            border: 3px solid #000;
+            padding: 12px;
+            margin-bottom: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-channel-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            color: var(--accent-pink);
+        }
+
+        .contact-channel-val {
+            font-size: 1.05rem;
+            color: #fff;
+            font-weight: bold;
+            word-break: break-all;
+        }
+
+
+        /* BATTLE TUTORIAL OVERLAY */
+        .battle-instructions-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(11, 15, 25, 0.95);
+            z-index: 10001;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .battle-instructions-content {
+            background: var(--panel-bg);
+            border: 8px solid #000;
+            box-shadow: 8px 8px 0px var(--accent-cyan);
+            padding: 24px;
+            max-width: 480px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--text-color);
+            position: relative;
+        }
+
+        .instructions-header {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.8rem;
+            color: var(--accent-yellow);
+            text-shadow: 2px 2px 0px #000;
+            border-bottom: 4px solid #000;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .instruction-spell-row {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            border-bottom: 1px dashed #2d3b56;
+            padding-bottom: 8px;
+        }
+
+        .instruction-spell-row:last-of-type {
+            border-bottom: none;
+        }
+
+        .instruction-spell-name {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            color: var(--accent-pink);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+
+        /* ARCADE COIN SCREEN */
+        .insert-coin-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--bg-color);
+            z-index: 100000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .insert-coin-cabinet {
+            background: #121824;
+            border: 8px solid #000;
+            box-shadow: 12px 12px 0px var(--accent-pink);
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+        }
+
+        .insert-coin-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.5rem;
+            color: var(--accent-cyan);
+            text-shadow: 4px 4px 0px #000;
+            margin-bottom: 20px;
+            animation: pulse-glow 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px var(--accent-cyan)); }
+            50% { transform: scale(1.03); filter: drop-shadow(0 0 15px var(--accent-cyan)); }
+        }
+
+        .insert-coin-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1rem;
+            padding: 20px 30px;
+            background: var(--accent-yellow);
+            border: 4px solid #000;
+            box-shadow: 8px 8px 0px #000;
+            cursor: pointer;
+            animation: coin-blink 1s step-start infinite;
+            margin-top: 20px;
+        }
+
+        .insert-coin-btn:active {
+            transform: translate(8px, 8px);
+            box-shadow: 0px 0px 0px #000;
+        }
+
+        @keyframes coin-blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .coin-hint {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 16px;
+        }
+        
+        /* CRT TOGGLE STYLES */
+        .no-crt::before {
+            display: none !important;
+        }
+        
+        .no-crt .crt-scanlines {
+            display: none !important;
+        }
+
+        /* MOBILE RESPONSIVE OPTIMIZATIONS */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+                background-size: 16px 16px; /* Tighter grid on mobile */
+            }
+            header {
+                padding: 16px 12px;
+            }
+            .logo-text h1 {
+                font-size: 1.1rem;
+            }
+            .logo-text p {
+                font-size: 0.75rem;
+            }
+            .retro-btn {
+                font-size: 0.6rem;
+                padding: 8px 12px;
+            }
+            .retro-panel {
+                padding: 16px 12px;
+            }
+            .retro-panel-title {
+                font-size: 0.75rem;
+                margin-bottom: 15px;
+            }
+            .character-portrait-box {
+                padding: 8px;
+                gap: 10px;
+            }
+            .pixel-avatar-container {
+                width: 64px;
+                height: 64px;
+            }
+            .char-name-title h2 {
+                font-size: 0.75rem;
+            }
+            .char-name-title p {
+                font-size: 0.6rem;
+            }
+            .status-label {
+                font-size: 0.5rem;
+                width: 20px;
+            }
+            .status-bar-outer {
+                height: 16px;
+            }
+            .rpg-attr-label {
+                font-size: 0.48rem;
+            }
+            .project-gear-picker {
+                gap: 6px;
+            }
+            .project-gear-btn {
+                padding: 8px 4px;
+                font-size: 0.42rem;
+            }
+            .boss-arena {
+                height: 180px;
+                padding: 10px 6px;
+            }
+            .actor-sprite {
+                width: 64px;
+                height: 64px;
+            }
+            .actor-sprite svg, .actor-sprite img {
+                width: 60px !important;
+                height: 60px !important;
+            }
+            .actor-stats-bubble {
+                width: 90px;
+                font-size: 0.38rem;
+                padding: 2px 4px;
+            }
+            .hp-bar-outer {
+                height: 6px;
+            }
+            .terminal-prompt-user {
+                display: none; /* Hide 'visitor@' on small screens to save space */
+            }
+            .terminal-prompt {
+                font-size: 0.85rem;
+            }
+            .terminal-body {
+                height: 150px;
+            }
+        }
+
+        /* EXTRA TIGHT RESPONSIVENESS FOR SCREENS BELOW 360px */
+        @media (max-width: 360px) {
+            .char-name-title p {
+                font-size: 0.52rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Accessibility: Skip to content -->
-    <a href="#main-content" class="skip-link">Skip to content</a>
-    <header class="navbar">
-        <div class="navbar-container">
-            <div class="logo">Leaf & Beam</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#contact" class="btn-nav">Book Free Visit</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" tabindex="0"
-                    aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
+    <div class="crt-scanlines"></div>
+
+    <!-- INSERT COIN splash overlay (Required to bypass Audio Context restrictions in modern browsers) -->
+    <div class="insert-coin-overlay" id="coin-screen">
+        <div class="insert-coin-cabinet">
+            <h2 class="insert-coin-title">SAIMANI'S ARCADE</h2>
+            <p style="margin-bottom: 12px; font-weight: bold; color: var(--accent-pink);">READY PLAYER ONE?</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px;">Click the button below to insert virtual coin, boot up system resources, and synthesize classic 8-bit soundwaves.</p>
+            <button class="insert-coin-btn" id="coin-btn">INSERT COIN</button>
+            <p class="coin-hint">PRESS START TO PLAY</p>
         </div>
-    </header>
+    </div>
 
-    <!-- Semantic HTML: main content -->
-    <main id="main-content">
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Climate Resilient <br>Construction & Interiors</h1>
-                <p>End-to-end solutions for any type of building. Passive architecture that conserves natural resources
-                    in an affordable way.</p>
-                <a href="#contact" class="btn-primary">Get a Free Estimation</a>
-            </div>
-            <div class="hero-image">
-                <!-- Accessibility: proper role and aria-label for visual element -->
-                <div class="image-placeholder" role="img" aria-label="Modern passive architecture home exterior"></div>
-            </div>
-        </section>
+    <!-- LEVEL UP DISPLAY SCREEN -->
+    <div class="level-up-overlay" id="lvl-up-screen">
+        <h2>LEVEL UP!</h2>
+        <div class="level-up-stats">
+            <p style="font-family:'Press Start 2P'; font-size: 0.8rem; color:#fff; margin-bottom: 12px;">SAIMANI REACHED LEVEL <span id="popup-lvl">6</span>!</p>
+            <p style="color: var(--accent-yellow); margin-bottom: 20px; font-weight: bold;">+10 Backend Coding</p>
+            <p style="color: var(--accent-cyan); margin-bottom: 20px; font-weight: bold;">+15 AI Integration</p>
+            <p style="color: var(--accent-pink); margin-bottom: 24px; font-weight: bold;">+5 Cloud Deployment</p>
+            <button class="retro-btn cyan-btn" id="lvl-ok-btn">AWESOME!</button>
+        </div>
+    </div>
 
-        <section id="about" class="about">
-            <div class="section-container">
-                <h2>Our Philosophy</h2>
-                <p class="subtitle">Harmony with nature, built to last.</p>
-                <div class="about-grid">
-                    <div class="about-card">
-                        <h3>Passive Architecture</h3>
-                        <p>We design buildings that naturally maintain a comfortable indoor climate, reducing the need
-                            for active heating or cooling.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Resource Conservation</h3>
-                        <p>Our building techniques prioritize sustainable, locally sourced materials that minimize
-                            environmental impact.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Affordable Luxury</h3>
-                        <p>Premium, high-quality finishes and structural integrity that fit within a practical and
-                            accessible budget.</p>
-                    </div>
+    <!-- BATTLE TUTORIAL OVERLAY SCREEN -->
+    <div class="battle-instructions-overlay" id="battle-instructions-screen">
+        <div class="battle-instructions-content">
+            <h2 class="instructions-header">👾 BATTLE TUTORIAL</h2>
+            <p style="margin-bottom: 16px; font-size: 0.95rem; text-align: center; color: var(--accent-cyan); font-weight: bold;">
+                You are playing as Saimani (Hero), battling "Legacy Spaghettius" (The Resume Filter) to secure a Job Offer!
+            </p>
+            
+            <div class="instruction-spell-row">
+                <span class="instruction-spell-name">⚔️ JAVA STRIKE (Free move)</span>
+                <strong>Real Life:</strong> Core Java backend logic.<br>
+                <strong>Effect:</strong> Deals <strong>60 - 110 HP</strong> codebase damage. Consumes <strong>0 MP</strong> because writing standard Java logic is Saimani's nature and costs no extra AI credits!
+            </div>
+            
+            <div class="instruction-spell-row">
+                <span class="instruction-spell-name">🛡️ SPRING BARRIER (Free move)</span>
+                <strong>Real Life:</strong> Spring Boot microservice health checks.<br>
+                <strong>Effect:</strong> Restores <strong>+25 HP</strong> and recharges <strong>+20 MP</strong>. Rebuilds Saimani's system server strength and replenishes AI Computing power!
+            </div>
+            
+            <div class="instruction-spell-row">
+                <span class="instruction-spell-name" style="color: var(--accent-yellow);">🔮 SUMMON GPT-4 (Consumes 30 MP)</span>
+                <strong>Real Life:</strong> Advanced Generative AI prompt pipelines.<br>
+                <strong>Effect:</strong> Deals massive <strong>100 - 220 HP</strong> damage. ⚠️ <em>Why the cost?</em> Summoning state-of-the-art LLMs consumes real-world API tokens and heavy GPU server compute, reducing Saimani's MP!
+            </div>
+            
+            <div class="instruction-spell-row">
+                <span class="instruction-spell-name" style="color: var(--accent-cyan);">⚙️ OPTIMIZE SQL (Consumes 15 MP)</span>
+                <strong>Real Life:</strong> Database indexing & query speedup.<br>
+                <strong>Effect:</strong> Deals <strong>40 - 80 HP</strong> damage and heals Saimani for <strong>+10 HP</strong>. Requires moderate database server computing resource (MP).
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 14px;">
+                💡 <strong style="color: var(--accent-yellow);">Winning Strategy:</strong> The enemy strikes back after every action! If you only click Java Strike, Saimani will run out of HP and be rejected. You must balance your turns: Cast <strong>Summon GPT-4</strong> for heavy damage, and use <strong>Spring Barrier</strong> to heal and recharge your MP when power runs low!
+            </p>
+            
+            <button class="retro-btn pink-btn" onclick="hideBattleInstructions()" style="margin-top: 18px; font-size: 0.75rem; width: 100%;">❌ CLOSE TUTORIAL</button>
+        </div>
+    </div>
+
+    <!-- STATS INFO OVERLAY SCREEN (VERY BASIC LANGUAGE) -->
+    <div class="battle-instructions-overlay" id="stats-info-screen">
+        <div class="battle-instructions-content" style="box-shadow: 8px 8px 0px var(--accent-yellow);">
+            <h2 class="instructions-header" style="color: var(--accent-cyan);">📊 STATS TUTORIAL</h2>
+            <p style="margin-bottom: 16px; font-size: 0.95rem; text-align: center; color: var(--accent-yellow); font-weight: bold;">
+                What do Saimani's game stats mean in real life?
+            </p>
+            
+            <div class="instruction-spell-row">
+                <span class="instruction-spell-name" style="color: var(--accent-pink);">❤️ HP (HEALTH POINTS)</span>
+                <strong>System stability and uptime:</strong> Just like health in a game, this shows how stable Saimani's servers and backend deployments are. Full HP means 100% bug-free server stability and uptime!
+            </div>
+            
+            <div class="instruction-spell-row">
+                <span class="instruction-spell-name" style="color: var(--accent-cyan);">⚡ MP (MANA POINTS)</span>
+                <strong>AI compute and coding power:</strong> The computational energy, API credits, and GPU server capacity Saimani uses to execute advanced AI models (like GPT-4) and database index optimizations!
+            </div>
+            
+            <div class="instruction-spell-row">
+                <span class="instruction-spell-name" style="color: var(--accent-yellow);">⭐ XP (EXPERIENCE POINTS)</span>
+                <strong>Career Achievements:</strong> Gained whenever a recruiter checkmarks completed job quests in Saimani's Quest Log below. Accumulating XP triggers a <strong>LEVEL UP</strong>!
+            </div>
+            
+            <div class="instruction-spell-row">
+                <span class="instruction-spell-name" style="color: #fff;">👑 CHAR LEVEL (LVL)</span>
+                <strong>Professional Mastery:</strong> As Saimani's Level increases, all of his backend coding, cloud networking, and AI integration skills grow permanently stronger!
+            </div>
+            
+            <button class="retro-btn pink-btn" onclick="hideStatsInfo()" style="margin-top: 18px; font-size: 0.75rem; width: 100%;">❌ CLOSE GUIDE</button>
+        </div>
+    </div>
+
+
+    <!-- SECURE CONTACT OVERLAY SCREEN -->
+    <div class="contact-modal-overlay" id="contact-modal-screen">
+        <div class="contact-modal-content">
+            <h2 class="contact-header">📡 SECURE BEACON</h2>
+            <p style="margin-bottom: 16px; font-size: 0.9rem; color: var(--accent-cyan); font-weight: bold;">
+                TRANSMITTING COMMUNICATIONS COORDINATES
+            </p>
+            
+            <div class="contact-channel-row">
+                <span class="contact-channel-label">📧 EMAIL ADDRESS</span>
+                <span class="contact-channel-val">saimani.singirikonda@gmail.com</span>
+                <button class="retro-btn yellow-btn" id="copy-email-btn" onclick="copyEmailToClipboard()" style="font-size: 0.55rem; padding: 6px 10px; margin-top: 6px; box-shadow: 2px 2px 0px #000; cursor: pointer;">📋 COPY EMAIL</button>
+            </div>
+            
+            <div class="contact-channel-row">
+                <span class="contact-channel-label">🔗 PROFESSIONAL NETWORK</span>
+                <a href="https://linkedin.com/in/saimani-singirikonda-b5a0431bb" target="_blank" class="retro-btn cyan-btn" style="font-size: 0.55rem; padding: 6px 10px; margin-top: 6px; box-shadow: 2px 2px 0px #000; text-decoration: none;">🌐 GO TO LINKEDIN</a>
+            </div>
+            
+            <div class="contact-channel-row">
+                <span class="contact-channel-label">💻 SOURCE REPOSITORIES</span>
+                <a href="https://github.com/saimani-s" target="_blank" class="retro-btn pink-btn" style="font-size: 0.55rem; padding: 6px 10px; margin-top: 6px; box-shadow: 2px 2px 0px #000; text-decoration: none;">🌐 GO TO GITHUB</a>
+            </div>
+            
+            <div class="contact-channel-row">
+                <span class="contact-channel-label">📄 PROFESSIONAL RESUME</span>
+                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:dbbe5c33-7542-45b2-943c-e83221a1b2a6" target="_blank" class="retro-btn yellow-btn" style="font-size: 0.55rem; padding: 6px 10px; margin-top: 6px; box-shadow: 2px 2px 0px #000; text-decoration: none;">📄 OPEN RESUME</a>
+            </div>
+            
+            <button class="retro-btn" onclick="closeContactModal()" style="margin-top: 10px; font-size: 0.75rem; width: 100%; background: #253046;">❌ CLOSE BEACON</button>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        <!-- HEADER MODULE -->
+        <header>
+            <div class="logo-area">
+                <!-- Retro SVG Developer Sprite -->
+                <svg class="logo-icon" viewBox="0 0 16 16" width="48" height="48" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                    <rect x="5" y="1" width="6" height="1" fill="var(--accent-pink)"></rect>
+                    <rect x="4" y="2" width="8" height="1" fill="var(--accent-pink)"></rect>
+                    <rect x="3" y="3" width="10" height="1" fill="var(--accent-pink)"></rect>
+                    <rect x="3" y="4" width="10" height="1" fill="#ffd1a4"></rect>
+                    <rect x="3" y="5" width="10" height="1" fill="#ffd1a4"></rect>
+                    <rect x="4" y="5" width="2" height="1" fill="var(--accent-cyan)"></rect>
+                    <rect x="10" y="5" width="2" height="1" fill="var(--accent-cyan)"></rect>
+                    <rect x="3" y="6" width="10" height="1" fill="#ffd1a4"></rect>
+                    <rect x="4" y="7" width="8" height="1" fill="var(--accent-pink)"></rect>
+                    <rect x="2" y="8" width="12" height="1" fill="var(--accent-pink)"></rect>
+                    <rect x="1" y="9" width="14" height="7" fill="var(--accent-pink)"></rect>
+                    <rect x="6" y="11" width="4" height="3" fill="var(--accent-cyan)"></rect>
+                </svg>
+                <div class="logo-text">
+                    <h1>SAIMANI.S</h1>
+                    <p>SOFTWARE ENGINEER</p>
                 </div>
             </div>
-        </section>
-
-        <section id="services" class="services">
-            <div class="section-container">
-                <h2>End-to-End Solutions</h2>
-                <div class="services-list">
-                    <div class="service-item">
-                        <span class="service-icon">🏗️</span>
-                        <h3>Exteriors & Construction</h3>
-                        <p>From foundation to roof, we build resilient structures designed for your specific climate.
-                        </p>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-icon">🛋️</span>
-                        <h3>Interior Design</h3>
-                        <p>Ergonomic, aesthetic, and functional interiors that seamlessly blend with our architectural
-                            vision.</p>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-icon">🌍</span>
-                        <h3>Pan-India Reach</h3>
-                        <p>Wherever you are in India, we provide free site visits and comprehensive estimations.</p>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-icon">🌿</span>
-                        <h3>Sustainable Materials</h3>
-                        <p>We source eco-friendly, durable materials that lower your carbon footprint without
-                            sacrificing quality.</p>
-                    </div>
-                </div>
+            <div class="header-controls">
+                <button class="retro-btn" id="audio-toggle">🔊 SOUND: ON</button>
+                <button class="retro-btn" id="crt-toggle">📺 CRT FILTERS: ON</button>
+                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:dbbe5c33-7542-45b2-943c-e83221a1b2a6" target="_blank" class="retro-btn pink-btn" style="text-decoration: none; cursor: pointer;">📄 RESUME</a>
+                <button onclick="openContactModal(event)" class="retro-btn yellow-btn" style="cursor: pointer;">📧 HIRE HERO</button>
             </div>
-        </section>
+        </header>
 
-        <section id="process" class="process">
-            <div class="section-container">
-                <div class="process-header">
-                    <h2>HOW WE <span class="script-font">Work</span></h2>
-                    <p class="subtitle">A seamless journey from concept to creation.</p>
+        <!-- TWO COLUMN LAYOUT -->
+        <div class="game-grid">
+            
+            <!-- LEFT COLUMN: STATUS & INVENTORY -->
+            <div class="grid-col">
+                
+                <!-- HERO STATUS CARD -->
+                <div class="retro-panel">
+                    <div class="retro-panel-title" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <span>HERO STATUS</span>
+                        <button onclick="showStatsInfo()" class="retro-btn yellow-btn" style="font-size: 0.42rem; padding: 4px 6px; box-shadow: 2px 2px 0px #000; cursor: pointer;">❓ STATS INFO</button>
+                    </div>
+                    <div class="hero-stats-card">
+                        <div class="character-portrait-box">
+                            <div class="pixel-avatar-container">
+                                <!-- Real Image slot with automatic fallback check -->
+                                <img id="char-img" class="pixel-avatar-image" src="avatar.png" alt="Saimani Singirikonda" onerror="handleImgError()">
+                                <!-- 16x16 pure SVG wizard avatar (Initial Fallback View) -->
+                                <svg id="char-svg" viewBox="0 0 16 16" width="64" height="64" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="4" y="1" width="8" height="1" fill="var(--accent-pink)" />
+                                    <rect x="3" y="2" width="10" height="1" fill="var(--accent-pink)" />
+                                    <rect x="2" y="3" width="12" height="1" fill="var(--accent-pink)" />
+                                    <rect x="2" y="4" width="2" height="6" fill="var(--accent-pink)" />
+                                    <rect x="12" y="4" width="2" height="6" fill="var(--accent-pink)" />
+                                    <rect x="4" y="4" width="8" height="5" fill="#ffd1a4" />
+                                    <rect x="4" y="5" width="8" height="2" fill="#000" />
+                                    <rect x="5" y="5" width="6" height="1" fill="var(--accent-cyan)" />
+                                    <rect x="6" y="5" width="1" height="1" fill="#fff" />
+                                    <rect x="7" y="8" width="2" height="1" fill="#555" />
+                                    <rect x="3" y="10" width="10" height="5" fill="var(--accent-pink)" />
+                                    <rect x="4" y="10" width="8" height="5" fill="#800040" />
+                                    <rect x="7" y="11" width="2" height="2" fill="var(--accent-cyan)" />
+                                </svg>
+                                <span class="char-level-badge" id="badge-lvl">5</span>
+                            </div>
+                            <div class="char-name-title">
+                                <h2>Saimani S.</h2>
+                                <p>Software Engineer - Capgemini</p>
+                            </div>
+                        </div>
+
+                        <!-- RPG STAT BARS -->
+                        <div class="status-bars">
+                            <div class="status-bar-row">
+                                <span class="status-label" title="HP (Health Points) = System stability and uptime.">HP</span>
+                                <div class="status-bar-outer" title="HP (Health Points) = System stability and uptime.">
+                                    <div class="status-bar-inner" id="status-hp-bar" style="width: 100%;"></div>
+                                    <span class="status-val" id="status-hp-val">100/100</span>
+                                </div>
+                            </div>
+                            <div class="status-bar-row">
+                                <span class="status-label" title="MP (Mana Points) = AI compute and coding power.">MP</span>
+                                <div class="status-bar-outer" title="MP (Mana Points) = AI compute and coding power.">
+                                    <div class="status-bar-inner mp" id="status-mp-bar" style="width: 80%;"></div>
+                                    <span class="status-val" id="status-mp-val">80/100</span>
+                                </div>
+                            </div>
+                            <div class="status-bar-row" title="XP: Experience Points (Fill by completing active job objectives to LEVEL UP!)">
+                                <span class="status-label">XP</span>
+                                <div class="status-bar-outer">
+                                    <div class="status-bar-inner xp" id="status-xp-bar" style="width: 40%;"></div>
+                                    <span class="status-val" id="status-xp-val">200/500</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STAT ATTRIBUTES (BASIC PROFESSIONAL NAMES) -->
+                        <div class="rpg-attributes">
+                            <div class="rpg-attribute-row" title="Core Backend Coding, Architectures, and API Scalability">
+                                <span class="rpg-attr-label">Backend Coding</span>
+                                <span class="rpg-attr-val" id="attr-str">95</span>
+                            </div>
+                            <div class="rpg-attribute-row" title="Applied AI Integrations, Generative models, and Prompts">
+                                <span class="rpg-attr-label">AI Integration</span>
+                                <span class="rpg-attr-val" id="attr-int">98</span>
+                            </div>
+                            <div class="rpg-attribute-row" title="Cloud network deployments, Serverless, and Containers">
+                                <span class="rpg-attr-label">Cloud Deployment</span>
+                                <span class="rpg-attr-val" id="attr-agi">88</span>
+                            </div>
+                            <div class="rpg-attribute-row" title="Log diagnostics, incident resolutions, and bug-squashing">
+                                <span class="rpg-attr-label">Problem Solving</span>
+                                <span class="rpg-attr-val" id="attr-luk">90</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="process-grid">
-                        <div class="process-card">
-                            <div class="process-number">01</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-                            <h3>FREE SITE VISIT</h3>
-                            <div class="process-divider"></div>
-                            <p>We visit your space, understand it and explore its potential.</p>
+                <!-- NEW: COMMUNICATIONS BEACON BOARD -->
+                <div class="retro-panel">
+                    <div class="retro-panel-title">
+                        <span>CONTACT HERO</span>
+                        <span style="color: var(--accent-cyan); font-size: 0.6rem;">BEACON</span>
+                    </div>
+                    <div class="contact-beacon-panel">
+                        <p style="font-size: 0.88rem; color: var(--text-muted); text-align: center;">Get in touch directly with Saimani to coordinate quests or schedule recruiter battles!</p>
+                        <div class="contact-grid">
+                            <button onclick="openContactModal(event)" class="retro-btn pink-btn" style="cursor: pointer; width: 100%;">📧 EMAIL</button>
+                            <a href="https://linkedin.com/in/saimani-singirikonda-b5a0431bb" target="_blank" class="retro-btn cyan-btn" style="text-decoration:none; display: inline-flex; width: 100%;">🔗 LINKEDIN</a>
                         </div>
-                        <div class="process-card">
-                            <div class="process-number">02</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
-                                </path>
-                                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                                <path d="M9 14h6"></path>
-                                <path d="M9 18h6"></path>
-                                <path d="M9 10h.01"></path>
-                            </svg>
-                            <h3>UNDERSTANDING CLIENT REQUIREMENTS</h3>
-                            <div class="process-divider"></div>
-                            <p>We listen to your ideas, needs, style and functional preferences.</p>
+                    </div>
+                </div>
+
+                <!-- SKILL INVENTORY CARD -->
+                <div class="retro-panel" id="skills-section">
+                    <div class="retro-panel-title">
+                        <span>SKILLS INVENTORY</span>
+                        <span style="color: var(--accent-yellow); font-size: 0.6rem;">INSPECT SLOTS</span>
+                    </div>
+                    <div class="inventory-layout">
+                        <!-- Grid Slots -->
+                        <div class="inventory-grid">
+                            
+                            <!-- Java (E) -->
+                            <div class="inventory-slot equipped" onclick="inspectSkill('java')" id="slot-java">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="6" y="2" width="4" height="2" fill="var(--accent-pink)" opacity="0.6"/>
+                                    <rect x="5" y="5" width="6" height="6" fill="#ffd700"/>
+                                    <rect x="4" y="6" width="8" height="4" fill="#ffd700"/>
+                                    <rect x="3" y="10" width="10" height="2" fill="var(--accent-pink)"/>
+                                    <rect x="6" y="12" width="4" height="1" fill="#fff"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- Spring Boot (E) -->
+                            <div class="inventory-slot equipped" onclick="inspectSkill('spring')" id="slot-spring">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <path d="M8,2 C5,5 4,8 4,11 C4,13 6,14 8,14 C10,14 12,13 12,11 C12,8 11,5 8,2 Z" fill="#3cd070" />
+                                    <circle cx="8" cy="9" r="2" fill="#fff" />
+                                </svg>
+                            </div>
+
+                            <!-- Python -->
+                            <div class="inventory-slot" onclick="inspectSkill('python')" id="slot-python">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="4" y="3" width="5" height="5" fill="#306998" />
+                                    <rect x="7" y="8" width="5" height="5" fill="#ffd43b" />
+                                    <circle cx="5" cy="4" r="0.5" fill="#fff" />
+                                    <circle cx="11" cy="11" r="0.5" fill="#000" />
+                                </svg>
+                            </div>
+
+                            <!-- Microservices / REST -->
+                            <div class="inventory-slot equipped" onclick="inspectSkill('rest')" id="slot-rest">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="2" y="6" width="3" height="3" fill="var(--accent-cyan)"/>
+                                    <rect x="11" y="6" width="3" height="3" fill="var(--accent-cyan)"/>
+                                    <rect x="5" y="7" width="6" height="1" fill="#fff"/>
+                                    <rect x="7" y="4" width="2" height="7" fill="#fff"/>
+                                    <circle cx="8" cy="7" r="1.5" fill="var(--accent-pink)"/>
+                                </svg>
+                            </div>
+
+                            <!-- GCP (BigQuery) -->
+                            <div class="inventory-slot equipped" onclick="inspectSkill('gcp')" id="slot-gcp">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <polygon points="8,2 14,5 14,11 8,14 2,11 2,5" fill="#4285f4"/>
+                                    <circle cx="8" cy="8" r="3" fill="#fff" />
+                                </svg>
+                            </div>
+
+                            <!-- AWS (Lambda) -->
+                            <div class="inventory-slot" onclick="inspectSkill('aws')" id="slot-aws">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="3" y="5" width="10" height="6" fill="#ff9900" rx="2"/>
+                                    <path d="M8,3 L12,8 L8,13 Z" fill="#fff"/>
+                                </svg>
+                            </div>
+
+                            <!-- OpenShift -->
+                            <div class="inventory-slot" onclick="inspectSkill('openshift')" id="slot-openshift">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <circle cx="8" cy="8" r="6" fill="#e00" />
+                                    <rect x="6" y="6" width="4" height="4" fill="#fff" />
+                                    <line x1="8" y1="2" x2="8" y2="14" stroke="#fff" stroke-width="2"/>
+                                </svg>
+                            </div>
+
+                            <!-- OpenAI GPT-4 -->
+                            <div class="inventory-slot equipped" onclick="inspectSkill('gpt4')" id="slot-gpt4">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <circle cx="8" cy="8" r="5" fill="var(--accent-yellow)"/>
+                                    <line x1="8" y1="1" x2="8" y2="15" stroke="#000" stroke-width="1.5"/>
+                                    <line x1="1" y1="8" x2="15" y2="8" stroke="#000" stroke-width="1.5"/>
+                                    <circle cx="8" cy="8" r="2" fill="var(--accent-pink)"/>
+                                </svg>
+                            </div>
+
+                            <!-- Claude -->
+                            <div class="inventory-slot" onclick="inspectSkill('claude')" id="slot-claude">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <polygon points="8,1 14,14 2,14" fill="#d97706" />
+                                    <polygon points="8,5 11,12 5,12" fill="#fff" />
+                                </svg>
+                            </div>
+
+                            <!-- LLAMA 2 -->
+                            <div class="inventory-slot" onclick="inspectSkill('llama2')" id="slot-llama2">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="5" y="3" width="6" height="7" fill="#8b5cf6" rx="1"/>
+                                    <rect x="6" y="10" width="1" height="3" fill="#8b5cf6"/>
+                                    <rect x="9" y="10" width="1" height="3" fill="#8b5cf6"/>
+                                    <circle cx="6.5" cy="5.5" r="0.5" fill="#fff"/>
+                                    <circle cx="8.5" cy="5.5" r="0.5" fill="#fff"/>
+                                </svg>
+                            </div>
+
+                            <!-- Cursor AI -->
+                            <div class="inventory-slot" onclick="inspectSkill('cursor')" id="slot-cursor">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="3" y="2" width="10" height="12" fill="#1e293b"/>
+                                    <rect x="5" y="4" width="2" height="8" fill="var(--accent-cyan)"/>
+                                    <rect x="7" y="4" width="4" height="2" fill="var(--accent-cyan)"/>
+                                </svg>
+                            </div>
+
+                            <!-- Amazon Textract / OCR -->
+                            <div class="inventory-slot" onclick="inspectSkill('textract')" id="slot-textract">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="3" y="3" width="10" height="10" fill="#f59e0b" />
+                                    <rect x="5" y="5" width="6" height="1" fill="#fff"/>
+                                    <rect x="5" y="8" width="6" height="1" fill="#fff"/>
+                                    <line x1="2" y1="6" x2="14" y2="6" stroke="#fff" stroke-width="1"/>
+                                </svg>
+                            </div>
+
+                            <!-- Amazon Comprehend / NLP -->
+                            <div class="inventory-slot" onclick="inspectSkill('comprehend')" id="slot-comprehend">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <circle cx="5" cy="8" r="2.5" fill="#10b981"/>
+                                    <circle cx="11" cy="8" r="2.5" fill="#4f46e5"/>
+                                    <line x1="5" y1="8" x2="11" y2="8" stroke="#fff" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+
+                            <!-- Splunk -->
+                            <div class="inventory-slot" onclick="inspectSkill('splunk')" id="slot-splunk">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <polygon points="2,14 8,2 14,14" fill="#000"/>
+                                    <polygon points="4,12 8,4 12,12" fill="#e11d48"/>
+                                </svg>
+                            </div>
+
+                            <!-- ServiceNow -->
+                            <div class="inventory-slot" onclick="inspectSkill('servicenow')" id="slot-servicenow">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <rect x="2" y="2" width="12" height="12" fill="#313d4f" rx="2"/>
+                                    <circle cx="8" cy="8" r="3" fill="#818cf8"/>
+                                </svg>
+                            </div>
+
+                            <!-- SQL -->
+                            <div class="inventory-slot equipped" onclick="inspectSkill('sql')" id="slot-sql">
+                                <svg viewBox="0 0 16 16" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                    <ellipse cx="8" cy="4" rx="5" ry="2" fill="#0284c7"/>
+                                    <ellipse cx="8" cy="8" rx="5" ry="2" fill="#0284c7"/>
+                                    <ellipse cx="8" cy="12" rx="5" ry="2" fill="#0284c7"/>
+                                    <line x1="3" y1="4" x2="3" y2="12" stroke="#fff" stroke-width="1"/>
+                                    <line x1="13" y1="4" x2="13" y2="12" stroke="#fff" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="process-card">
-                            <div class="process-number">03</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <circle cx="12" cy="12" r="4"></circle>
-                                <path d="M12 2v2"></path>
-                                <path d="M12 20v2"></path>
-                                <path d="M4.93 4.93l1.41 1.41"></path>
-                                <path d="M17.66 17.66l1.41 1.41"></path>
-                                <path d="M2 12h2"></path>
-                                <path d="M20 12h2"></path>
-                                <path d="M6.34 17.66l-1.41 1.41"></path>
-                                <path d="M19.07 4.93l-1.41 1.41"></path>
-                            </svg>
-                            <h3>CONCEPT DISCUSSION & SUGGESTIONS</h3>
-                            <div class="process-divider"></div>
-                            <p>We discuss ideas, share suggestions and create the best possible concept for you.</p>
+
+                        <!-- Item Description Inspector Panel -->
+                        <div class="inventory-details-box" id="item-inspect-panel">
+                            <div class="item-details-header">
+                                <span class="item-name" id="item-name">Java Core</span>
+                                <span class="item-type" id="item-type">LEGENDARY CORE</span>
+                            </div>
+                            <p class="item-stats" id="item-stats">+99 Backend Power / +90 Uptime</p>
+                            <p class="item-desc" id="item-desc">A powerful language used to build robust, scalable, and high-performance backend systems and enterprise services.</p>
                         </div>
-                        <div class="process-card">
-                            <div class="process-number">04</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                                <line x1="8" y1="6" x2="16" y2="6"></line>
-                                <line x1="16" y1="14" x2="16" y2="18"></line>
-                                <rect x="8" y="10" width="4" height="8"></rect>
-                            </svg>
-                            <h3>FREE ESTIMATION & PROPOSAL</h3>
-                            <div class="process-divider"></div>
-                            <p>We provide a detailed estimate and proposal tailored to your requirements.</p>
-                        </div>
-                        <div class="process-card">
-                            <div class="process-number">05</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                            </svg>
-                            <h3>APPROVAL / REVISIONS</h3>
-                            <div class="process-divider"></div>
-                            <p>You review the proposal and we refine it based on your feedback.</p>
-                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: ABOUT, EXPERIENCE, MINI-GAME -->
+            <div class="grid-col">
+                
+                <!-- ABOUT ME PANEL -->
+                <div class="retro-panel">
+                    <div class="retro-panel-title">
+                        <span>THE HERO'S STORY</span>
+                        <span style="color: var(--accent-cyan); font-size: 0.6rem;">BIO</span>
+                    </div>
+                    <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 12px;">
+                        Software Engineer with proven experience developing scalable backend microservices using <strong>Java</strong>, <strong>Spring Boot</strong>, and cloud platforms like <strong>GCP</strong> and <strong>OpenShift</strong>. I deliver high-availability enterprise solutions and optimize SQL/BigQuery databases.
+                    </p>
+                    <p style="font-size: 1.05rem; line-height: 1.7;">
+                        I have hands-on exposure to AI/LLM tools (OpenAI GPT-4, Claude, Azure/AWS AI services) and am looking to apply both backend and AI expertise to drive innovative enterprise systems.
+                    </p>
+                    <p style="font-size: 1.05rem; line-height: 1.7; margin-top: 12px; color: var(--accent-yellow); font-family: 'Press Start 2P', monospace; font-size: 0.65rem; border-left: 4px solid var(--accent-pink); padding-left: 10px;">
+                        💬 "I love vibe coding &amp; exploring new AI tools!"
+                    </p>
+                </div>
+
+                <!-- QUESTS TIMELINE (EXPERIENCE) -->
+                <div class="retro-panel" id="experience-section">
+                    <div class="retro-panel-title">
+                        <span>ACTIVE & COMPLETED QUESTS</span>
+                        <span style="color: var(--accent-pink); font-size: 0.6rem;">QUEST LOG</span>
+                    </div>
+                    <div class="quest-log-container">
                         
-                        <!-- Aesthetic Connection Line from Card 5 to Card 6 -->
-                        <div class="process-connection">
-                            <svg class="s-curve-svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-                                <path d="M850,0 C850,50 850,50 500,50 C150,50 150,50 150,100" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-dasharray="8,6" />
-                                <polygon points="145,90 155,90 150,100" fill="var(--accent-color)"/>
-                            </svg>
+                        <!-- QUEST 1: Capgemini (Active) -->
+                        <div class="quest-card" id="quest-ikea">
+                            <div class="quest-header">
+                                <div class="quest-title-sub">
+                                    <h3 class="quest-title">👑 QUEST: Resolve Product Visibility</h3>
+                                    <span class="quest-company">Capgemini — Software Engineer</span>
+                                </div>
+                                <span class="quest-date">Jan 2026 - PRESENT</span>
+                            </div>
+                            <div class="quest-objectives-box">
+                                <h4 class="quest-objectives-title">Quest Objectives:</h4>
+                                <ul class="objective-list">
+                                    <li class="objective-item" onclick="toggleObjective(this, 'ikea-api', 150)">
+                                        <span class="pixel-checkbox"></span>
+                                        <span>Validate backend API responses across search and listing pages to resolve visibility issues</span>
+                                    </li>
+                                    <li class="objective-item" onclick="toggleObjective(this, 'ikea-bq', 150)">
+                                        <span class="pixel-checkbox"></span>
+                                        <span>Utilize BigQuery on GCP to query large datasets and verify backend system records</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="quest-rewards">
+                                <span>REWARDS:</span>
+                                <span>🏆 +300 XP</span>
+                                <span>💰 +50 GP</span>
+                            </div>
                         </div>
 
-                        <div class="process-card">
-                            <div class="process-number">06</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-                                <circle cx="12" cy="12" r="2"></circle>
-                                <path d="M6 12h.01M18 12h.01"></path>
-                            </svg>
-                            <h3>TOKEN ADVANCE CONFIRMATION</h3>
-                            <div class="process-divider"></div>
-                            <p>Once approved, a token amount is submitted to confirm and initiate the project.</p>
+                        <!-- QUEST 2: Capgemini (Completed) -->
+                        <div class="quest-card" id="quest-capgemini">
+                            <div class="quest-header">
+                                <div class="quest-title-sub">
+                                    <h3 class="quest-title">✔️ QUEST: Scale Backend Microservices</h3>
+                                    <span class="quest-company">Capgemini — Software Engineer</span>
+                                </div>
+                                <span class="quest-date">Aug 2020 - May 2024</span>
+                            </div>
+                            <div class="quest-objectives-box">
+                                <h4 class="quest-objectives-title">Quest Objectives:</h4>
+                                <ul class="objective-list">
+                                    <li class="objective-item completed" onclick="toggleObjective(this, 'cap-ms', 100)">
+                                        <span class="pixel-checkbox"></span>
+                                        <span>Build and maintain scalable backend microservices using Java and Spring Boot</span>
+                                    </li>
+                                    <li class="objective-item completed" onclick="toggleObjective(this, 'cap-splunk', 100)">
+                                        <span class="pixel-checkbox"></span>
+                                        <span>Analyze Splunk logs to rapidly debug and resolve critical production incidents</span>
+                                    </li>
+                                    <li class="objective-item completed" onclick="toggleObjective(this, 'cap-openshift', 100)">
+                                        <span class="pixel-checkbox"></span>
+                                        <span>Monitor and configure containerized microservice deployments on OpenShift</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="quest-rewards">
+                                <span>REWARDS:</span>
+                                <span>🏆 +300 XP</span>
+                                <span>💰 +80 GP</span>
+                            </div>
                         </div>
-                        <div class="process-card">
-                            <div class="process-number">07</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M3 3v18h18"></path>
-                                <path d="M18 17V9a2 2 0 0 0-2-2H8"></path>
-                                <path d="M8 17V7a2 2 0 0 1 2-2h8"></path>
-                                <line x1="8" y1="17" x2="18" y2="17"></line>
-                            </svg>
-                            <h3>DESIGN & DETAILED PLANNING</h3>
-                            <div class="process-divider"></div>
-                            <p>We create detailed designs, layouts, 3D views and finalize every detail for perfect
-                                execution.</p>
-                        </div>
-                        <div class="process-card">
-                            <div class="process-number">08</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                <polyline points="2 17 12 22 22 17"></polyline>
-                                <polyline points="2 12 12 17 22 12"></polyline>
-                            </svg>
-                            <h3>EXECUTION & PROJECT DELIVERY</h3>
-                            <div class="process-divider"></div>
-                            <p>Our team executes the project with quality, transparency and timely updates.</p>
-                        </div>
-                        <div class="process-card">
-                            <div class="process-number">09</div>
-                            <svg class="process-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <path d="M9 22V12h6v10"></path>
-                            </svg>
-                            <h3>FINAL HANDOVER & SUPPORT</h3>
-                            <div class="process-divider"></div>
-                            <p>We hand over the finished space and remain with you for any support you need.</p>
-                        </div>
+
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="contact" class="contact">
-            <div class="contact-container">
-                <div class="contact-text">
-                    <h2>Ready to build your dream space?</h2>
-                    <p>Book your <strong>free site visit and estimation</strong> today. Our experts will assess your
-                        location and provide a tailored plan.</p>
+                <!-- BOSS BATTLE & LEGENDARY PROJECTS -->
+                <div class="retro-panel" id="boss-section">
+                    <div class="retro-panel-title">
+                        <span>PROJECT ARTIFACTS & BATTLE ARENA</span>
+                        <span style="color: var(--accent-yellow); font-size: 0.6rem;">INTERACTIVE SYSTEM</span>
+                    </div>
+
+                    <!-- TABBED PROJECT SELECTOR (ONLY REAL + IN PROGRESS PROJECTS) -->
+                    <div style="font-family: 'Press Start 2P', monospace; font-size: 0.55rem; color: #fff; margin-bottom: 8px;">SELECT LEGENDARY ARTIFACT:</div>
+                    <div class="project-gear-picker">
+                        <button class="project-gear-btn active" onclick="inspectProject('analyzer')" id="projbtn-analyzer">🤖 JOB ANALYZER</button>
+                        <button class="project-gear-btn" onclick="inspectProject('onetool')" id="projbtn-onetool">🛠️ ONETOOL</button>
+                        <button class="project-gear-btn" onclick="inspectProject('metalcrash')" id="projbtn-metalcrash">🌿 LEAF & BEAM</button>
+                        <button class="project-gear-btn" onclick="inspectProject('github')" id="projbtn-github">🌐 GITHUB DROPS</button>
+                    </div>
+
+                    <!-- PROJECT INSPECTOR VIEW CARD -->
+                    <div class="project-inspect-card" id="project-inspect-card">
+                        <div class="project-inspect-header">
+                            <span class="project-inspect-title" id="proj-title">Job Analyzer [Vibecoded]</span>
+                            <span class="project-inspect-tech" id="proj-tech">Python / GPT-4 / AWS</span>
+                        </div>
+                        <p class="project-inspect-desc" id="proj-desc">Developed an AI-powered application integrating LLM-based analysis (GPT-4) and AWS Natural Language Processing (NLP) to optimize resume-to-job matching. Built a serverless Python REST API using AWS Lambda and API Gateway, using Amazon Textract for OCR and Comprehend for NLP.</p>
+                    </div>
+
+                    <div class="boss-game-box">
+                        <!-- BOSS ARENA WINDOW -->
+                        <div class="boss-arena" id="arena-flash">
+                            
+                            <!-- HERO ACTOR (SAIMANI) -->
+                            <div class="battle-actor">
+                                <div class="actor-sprite" id="hero-actor">
+                                    <!-- Hero avatar in boss battle also reacts to the avatar.png vs custom SVG -->
+                                    <img id="combat-hero-img" class="pixel-avatar-image" src="avatar.png" alt="Saimani Singirikonda" onerror="handleCombatImgError()" style="width: 80px; height: 80px;">
+                                    <svg id="combat-hero-svg" viewBox="0 0 16 16" width="80" height="80" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                        <rect x="4" y="1" width="8" height="1" fill="var(--accent-pink)" />
+                                        <rect x="3" y="2" width="10" height="1" fill="var(--accent-pink)" />
+                                        <rect x="2" y="3" width="12" height="1" fill="var(--accent-pink)" />
+                                        <rect x="2" y="4" width="2" height="6" fill="var(--accent-pink)" />
+                                        <rect x="12" y="4" width="2" height="6" fill="var(--accent-pink)" />
+                                        <rect x="4" y="4" width="8" height="5" fill="#ffd1a4" />
+                                        <rect x="4" y="5" width="8" height="2" fill="#000" />
+                                        <rect x="5" y="5" width="6" height="1" fill="var(--accent-cyan)" />
+                                        <rect x="7" y="8" width="2" height="1" fill="#555" />
+                                        <rect x="3" y="10" width="10" height="5" fill="var(--accent-pink)" />
+                                        <rect x="4" y="10" width="8" height="5" fill="#800040" />
+                                    </svg>
+                                </div>
+                                <div class="actor-stats-bubble hero-stats">
+                                    <div>SAIMANI (LVL <span id="combat-lvl">5</span>)</div>
+                                    <div class="hp-bar-outer">
+                                        <div class="hp-bar-inner cyan" id="combat-hero-hp" style="width: 100%;"></div>
+                                    </div>
+                                    <div style="font-size: 0.35rem; margin-top:2px;">HP: <span id="combat-hero-hp-text">100</span>/100</div>
+                                </div>
+                            </div>
+
+                            <!-- VS TEXT -->
+                            <div style="font-family:'Press Start 2P'; font-size: 0.8rem; color: var(--accent-yellow); margin-bottom: 70px; z-index: 5;">VS</div>
+
+                            <!-- BOSS ACTOR (LEGACY SPAGHETTIUS) -->
+                            <div class="battle-actor">
+                                <div class="actor-sprite boss-sprite" id="boss-actor">
+                                    <!-- 24x24 custom pixel boss SVG -->
+                                    <svg viewBox="0 0 24 24" width="96" height="96" style="image-rendering: pixelated; shape-rendering: crispEdges;">
+                                        <rect x="6" y="4" width="12" height="14" fill="#1b002c" />
+                                        <rect x="4" y="6" width="16" height="10" fill="#2d004d" />
+                                        <rect x="3" y="8" width="18" height="6" fill="#ff0055" opacity="0.35" />
+                                        <rect x="9" y="8" width="6" height="6" fill="#000" />
+                                        <rect x="10" y="9" width="4" height="4" fill="#ff0055" />
+                                        <rect x="11" y="10" width="2" height="2" fill="#ffcc00" />
+                                        <rect x="2" y="12" width="4" height="2" fill="var(--accent-cyan)" />
+                                        <rect x="18" y="12" width="4" height="2" fill="var(--accent-cyan)" />
+                                        <rect x="4" y="16" width="2" height="4" fill="var(--accent-pink)" />
+                                        <rect x="18" y="16" width="2" height="4" fill="var(--accent-pink)" />
+                                        <rect x="8" y="18" width="2" height="3" fill="var(--accent-cyan)" />
+                                        <rect x="14" y="18" width="2" height="3" fill="var(--accent-yellow)" />
+                                    </svg>
+                                </div>
+                                <div class="actor-stats-bubble boss-stats">
+                                    <div>LEGACY FILTER</div>
+                                    <div class="hp-bar-outer">
+                                        <div class="hp-bar-inner" id="combat-boss-hp" style="width: 100%;"></div>
+                                    </div>
+                                    <div style="font-size: 0.35rem; margin-top:2px;">HP: <span id="combat-boss-hp-text">800</span>/800</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- COMBAT LOGS SCREEN -->
+                        <div class="combat-log-box" id="combat-logs">
+                            <div class="log-entry">You encountered the Legacy Resume Filter! Prove Saimani's skills to bypass the filter.</div>
+                        </div>
+
+                        <!-- CONTROLS & SPELLS BOARD -->
+                        <div class="boss-controls">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <span style="font-family: 'Press Start 2P', monospace; font-size: 0.55rem; color: #fff;">SELECT ACTIONS:</span>
+                                <button class="retro-btn yellow-btn" onclick="showBattleInstructions()" style="font-size: 0.45rem; padding: 4px 8px; box-shadow: 2px 2px 0px #000; cursor: pointer;">❓ HOW TO PLAY</button>
+                            </div>
+                            <div class="boss-actions-grid" id="battle-actions-board">
+                                <button class="retro-btn pink-btn" onclick="castSpell('java')">JAVA STRIKE</button>
+                                <button class="retro-btn cyan-btn" onclick="castSpell('spring')">SPRING BARRIER</button>
+                                <button class="retro-btn yellow-btn" onclick="castSpell('gpt4')">SUMMON GPT-4</button>
+                                <button class="retro-btn" onclick="castSpell('sql')" style="background:#4b5563;">OPTIMIZE SQL</button>
+                            </div>
+                            
+                            <!-- REBOOT RETRY BOARD -->
+                            <div id="retry-board" style="display: none; margin-top: 8px;">
+                                <button class="retro-btn yellow-btn" onclick="resetBattle()" style="width: 100%; font-size: 0.8rem; padding: 16px;">🔄 REBOOT ARENA / REVIVE HERO</button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form id="leadForm" class="lead-form">
-                        <div class="form-group">
-                            <label for="name">Full Name <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" required minlength="2" pattern="^[A-Za-z\s]+$"
-                                title="Name should contain only letters and spaces" placeholder="John Doe"
-                                autocomplete="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number <span class="required">*</span></label>
-                            <input type="tel" id="phone" name="phone" required pattern="^[0-9]{10}$" maxlength="10"
-                                title="Please enter a valid 10-digit phone number" placeholder="9876543210"
-                                autocomplete="tel">
-                        </div>
-                        <div class="form-group">
-                            <label for="location">Project Location <span class="required">*</span></label>
-                            <input type="text" id="location" name="location" required minlength="2"
-                                title="Location should be at least 2 characters long" placeholder="City, State"
-                                autocomplete="address-level2">
-                        </div>
-                        <div class="form-group">
-                            <label for="projectType">Project Type <span class="required">*</span></label>
-                            <select id="projectType" name="projectType" required>
-                                <option value="">Select an option</option>
-                                <option value="Residential Construction">Residential Construction</option>
-                                <option value="Commercial Construction">Commercial Construction</option>
-                                <option value="Interiors">Interiors</option>
-                                <option value="End-to-End (Both)">End-to-End (Both)</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Additional Details <span class="optional">(Optional)</span></label>
-                            <textarea id="message" name="message" rows="4"
-                                placeholder="Tell us a bit about your requirement..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit" id="submitBtn">Submit Request</button>
-                        <p id="formMessage" class="form-message"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
 
-    </main>
+            </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">Leaf & Beam</div>
-            <p>Climate Resilient Construction | Passive Architecture</p>
-            <div class="footer-contact">
-                <p>📍 Available across India | 📞 +91 9154051671</p>
-            </div>
-            <div class="trust-badges">
-                <span title="SSL Secure">🔒 100% Secure</span>
-                <span title="Guaranteed Quality">✅ ISO Certified Quality</span>
-            </div>
-            <div class="footer-links">
-                <a href="/privacy-policy">Privacy Policy</a> |
-                <a href="/terms-of-service">Terms of Service</a>
-            </div>
-            <p class="copyright">&copy; 2026 Leaf & Beam. All rights reserved.</p>
         </div>
-    </footer>
-</body>
 
+        <!-- CRT TERMINAL MODULE (CONTACT DETAILS & CRT CONSOLE) -->
+        <footer class="crt-terminal-panel">
+            <div class="terminal-header">
+                <span>SAIMANI-OS TERMINAL v1.0.8</span>
+                <span>TYPE 'HELP' FOR ALL COMMANDS</span>
+            </div>
+            <div class="terminal-body" id="terminal-screen">
+                <div>Welcome to Saimani's interactive terminal console.</div>
+                <div>=======================================================</div>
+                <div>Type '<span style="color: var(--accent-cyan); font-weight: bold;">help</span>' to list all virtual operating system commands.</div>
+                <div>Type '<span style="color: var(--accent-yellow); font-weight: bold;">contact</span>' to reveal secret communications coordinates.</div>
+                <div class="terminal-input-row">
+                    <span class="terminal-prompt"><span class="terminal-prompt-user">visitor@</span>saimani-os:~$</span>
+                    <span style="color: var(--text-muted);">[System loaded. Awaiting instructions...]</span>
+                </div>
+            </div>
+            <div class="terminal-input-row" style="border-top: 2px solid #0f3014; padding-top: 8px;">
+                <span class="terminal-prompt"><span class="terminal-prompt-user">visitor@</span>saimani-os:~$</span>
+                <input type="text" class="terminal-input" id="term-input" autocomplete="off" placeholder="Type a command...">
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- AUDIO ENGINE & ACTIONS LOGIC -->
+    <script>
+        // ----------------------------------------------------
+        // Web Audio Synthesizer Engine (8-Bit Arcade Sounds)
+        // ----------------------------------------------------
+        let audioCtx = null;
+        let isMuted = false;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        function playSynthSound(type) {
+            if (isMuted || !audioCtx) return;
+            
+            const now = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            
+            if (type === 'coin') {
+                // Classic double chime
+                osc.type = 'square';
+                osc.frequency.setValueAtTime(987.77, now); // B5
+                osc.frequency.setValueAtTime(1318.51, now + 0.08); // E6
+                gain.gain.setValueAtTime(0.12, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
+                osc.start(now);
+                osc.stop(now + 0.4);
+            } 
+            else if (type === 'hit') {
+                // Noise / Low pitch drop explosion
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(180, now);
+                osc.frequency.exponentialRampToValueAtTime(10, now + 0.25);
+                gain.gain.setValueAtTime(0.25, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+                osc.start(now);
+                osc.stop(now + 0.25);
+            } 
+            else if (type === 'laser') {
+                // Zapping down frequency sweep
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(800, now);
+                osc.frequency.exponentialRampToValueAtTime(150, now + 0.15);
+                gain.gain.setValueAtTime(0.08, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+                osc.start(now);
+                osc.stop(now + 0.15);
+            } 
+            else if (type === 'heal') {
+                // Ascending sweep
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(300, now);
+                osc.frequency.exponentialRampToValueAtTime(1200, now + 0.35);
+                gain.gain.setValueAtTime(0.15, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
+                osc.start(now);
+                osc.stop(now + 0.35);
+            } 
+            else if (type === 'levelup') {
+                // Major arpeggio chime fanfare
+                osc.type = 'square';
+                const freqs = [261.63, 329.63, 392.00, 523.25, 659.25, 783.99, 1046.50];
+                freqs.forEach((freq, i) => {
+                    osc.frequency.setValueAtTime(freq, now + (i * 0.08));
+                });
+                gain.gain.setValueAtTime(0.15, now);
+                gain.gain.setValueAtTime(0.15, now + 0.48);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.85);
+                osc.start(now);
+                osc.stop(now + 0.85);
+            }
+            else if (type === 'click') {
+                // Quick woodblock-like tap
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(400, now);
+                osc.frequency.setValueAtTime(200, now + 0.03);
+                gain.gain.setValueAtTime(0.15, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
+                osc.start(now);
+                osc.stop(now + 0.05);
+            }
+        }
+
+        // Toggle Audio States
+        const audioBtn = document.getElementById('audio-toggle');
+        audioBtn.addEventListener('click', () => {
+            initAudio();
+            isMuted = !isMuted;
+            if (isMuted) {
+                audioBtn.innerText = '🔇 SOUND: OFF';
+            } else {
+                audioBtn.innerText = '🔊 SOUND: ON';
+                playSynthSound('click');
+            }
+        });
+
+        // Toggle CRT Scanlines & Flickers
+        const crtBtn = document.getElementById('crt-toggle');
+        crtBtn.addEventListener('click', () => {
+            playSynthSound('click');
+            document.body.classList.toggle('no-crt');
+            if (document.body.classList.contains('no-crt')) {
+                crtBtn.innerText = '📺 CRT FILTERS: OFF';
+            } else {
+                crtBtn.innerText = '📺 CRT FILTERS: ON';
+            }
+        });
+
+        // Coins Splash Handling
+        document.getElementById('coin-btn').addEventListener('click', () => {
+            initAudio();
+            playSynthSound('coin');
+            document.getElementById('coin-screen').style.display = 'none';
+            // Force viewport to start at the very top of the arcade board
+            window.scrollTo(0, 0);
+        });
+
+        // ----------------------------------------------------
+        // Real Portrait Image Dynamic Loading & Fallback
+        // ----------------------------------------------------
+        const portraitImg = document.getElementById('char-img');
+        const portraitSvg = document.getElementById('char-svg');
+        const combatImg = document.getElementById('combat-hero-img');
+        const combatSvg = document.getElementById('combat-hero-svg');
+
+        // Main Profile Dynamic Loader
+        portraitImg.onload = function() {
+            portraitImg.style.display = 'block';
+            portraitSvg.style.display = 'none';
+        };
+        
+        function handleImgError() {
+            portraitImg.style.display = 'none';
+            portraitSvg.style.display = 'block';
+        }
+
+        // Battle Sprite Dynamic Loader
+        combatImg.onload = function() {
+            combatImg.style.display = 'block';
+            combatSvg.style.display = 'none';
+        };
+
+        function handleCombatImgError() {
+            combatImg.style.display = 'none';
+            combatSvg.style.display = 'block';
+        }
+
+        // Trigger loaders
+        portraitImg.src = "avatar.png";
+        combatImg.src = "avatar.png";
+
+
+        // ----------------------------------------------------
+        // RPG Experience Leveling Logic
+        // ----------------------------------------------------
+        let currentXP = 200;
+        let maxXp = 500;
+        let charLevel = 5;
+        const questsCompletionTracker = {};
+
+        function addExperience(amount, event) {
+            // Ensure experience never drops below 0 when unchecking quests
+            currentXP = Math.max(0, currentXP + amount);
+            
+            // Render floaty text indicator
+            if (event) {
+                const rect = event.target.getBoundingClientRect();
+                const x = rect.left + window.scrollX;
+                const y = rect.top + window.scrollY - 15;
+                createFloatingXpText(`+${amount} XP`, x, y);
+            }
+
+            if (currentXP >= maxXp) {
+                currentXP -= maxXp;
+                charLevel += 1;
+                triggerLevelUp();
+            }
+
+            updateXpBarsElements();
+        }
+
+        function createFloatingXpText(text, x, y) {
+            const div = document.createElement('div');
+            div.className = 'xp-float';
+            div.innerText = text;
+            div.style.left = `${x}px`;
+            div.style.top = `${y}px`;
+            document.body.appendChild(div);
+            setTimeout(() => { div.remove(); }, 1200);
+        }
+
+        function updateXpBarsElements() {
+            const percentage = (currentXP / maxXp) * 100;
+            document.getElementById('status-xp-bar').style.width = `${percentage}%`;
+            document.getElementById('status-xp-val').innerText = `${currentXP}/${maxXp}`;
+            document.getElementById('badge-lvl').innerText = charLevel;
+            document.getElementById('combat-lvl').innerText = charLevel;
+        }
+
+        function triggerLevelUp() {
+            playSynthSound('levelup');
+            
+            // Adjust attributes
+            const currentStr = parseInt(document.getElementById('attr-str').innerText);
+            const currentInt = parseInt(document.getElementById('attr-int').innerText);
+            const currentAgi = parseInt(document.getElementById('attr-agi').innerText);
+            const currentLuk = parseInt(document.getElementById('attr-luk').innerText);
+            
+            document.getElementById('attr-str').innerText = currentStr + 10;
+            document.getElementById('attr-int').innerText = currentInt + 15;
+            document.getElementById('attr-agi').innerText = currentAgi + 5;
+            document.getElementById('attr-luk').innerText = currentLuk + 2;
+
+            // Trigger visual modal
+            const overlay = document.getElementById('lvl-up-screen');
+            document.getElementById('popup-lvl').innerText = charLevel;
+            overlay.style.display = 'flex';
+        }
+
+        document.getElementById('lvl-ok-btn').addEventListener('click', () => {
+            playSynthSound('click');
+            document.getElementById('lvl-up-screen').style.display = 'none';
+        });
+
+        // Quest Objectives Handler
+        function toggleObjective(element, objectiveId, xpReward) {
+            if (element.classList.contains('completed')) {
+                element.classList.remove('completed');
+                questsCompletionTracker[objectiveId] = false;
+                playSynthSound('click');
+                addExperience(-xpReward, null);
+            } else {
+                element.classList.add('completed');
+                questsCompletionTracker[objectiveId] = true;
+                playSynthSound('coin');
+                addExperience(xpReward, { target: element });
+            }
+        }
+
+
+        // ----------------------------------------------------
+        // RPG Skills Inventory Inspect System (SIMPLIFIED)
+        // ----------------------------------------------------
+        const SKILLS_DATA = {
+            java: {
+                name: "Java Core",
+                type: "LEGENDARY CORE",
+                stats: "+99 Backend Power / +90 Uptime",
+                desc: "A powerful language used to build robust, scalable, and high-performance backend systems and enterprise services."
+            },
+            spring: {
+                name: "Spring Boot",
+                type: "MYSTICAL FRAMEWORK",
+                stats: "+98 REST Architecture / +95 IoC Magic",
+                desc: "A widely-used Java framework that simplifies backend development, configures microservices, and builds web APIs rapidly."
+            },
+            python: {
+                name: "Python Synthesizer",
+                type: "AI SCRIPT CONJURER",
+                stats: "+95 Data Manipulation / +96 Model Inference",
+                desc: "A highly readable language great for handling data analysis, scripting automated tasks, and integrating machine learning tools."
+            },
+            rest: {
+                name: "REST Microservices",
+                type: "COMMUNICATION MATRIX",
+                stats: "+96 Port Integration / +94 Low Latency",
+                desc: "Structures clean communication protocols between backend components to transfer data smoothly over web endpoints."
+            },
+            gcp: {
+                name: "GCP (BigQuery)",
+                type: "COSMIC DATA EYE",
+                stats: "+98 Massive SQL Queries / +90 cloud Storage",
+                desc: "Google Cloud Platform's big data warehouse, enabling fast storage, query retrieval, and log analyses on large datasets."
+            },
+            aws: {
+                name: "AWS Lambda & S3",
+                type: "SERVERLESS SANCTUARY",
+                stats: "+94 Trigger Compute / +90 Storage holds",
+                desc: "Amazon Web Services serverless functions and file storage tools used to run codes dynamically without maintaining physical servers."
+            },
+            openshift: {
+                name: "Red Hat OpenShift",
+                type: "CONTAINER FORTRESS",
+                stats: "+92 High Availability / +89 Pod Shields",
+                desc: "An enterprise platform that simplifies, orchestrates, and monitors containerized docker services for high availability."
+            },
+            gpt4: {
+                name: "OpenAI GPT-4",
+                type: "LLM CHIP INTELLECT",
+                stats: "+99 Cognitive Prompting / +95 Semantic Mapping",
+                desc: "OpenAI's advanced language model, integrated to build intelligent automated tools, prompt architectures, and code assistants."
+            },
+            claude: {
+                name: "Claude AI",
+                type: "CONSTITUTIONAL SAGE",
+                stats: "+96 Precise Synthesis / +92 Coding Assist",
+                desc: "Anthropic's premier language model, excellent for analyzing dense files, creating thorough reports, and pairing on debug tasks."
+            },
+            llama2: {
+                name: "Antigravity AI",
+                type: "COGNITIVE AGENT",
+                stats: "+150% Autopilot Velocity / +99 Task Automation",
+                desc: "An advanced agentic AI coding companion designed by the Google DeepMind team, engineered to pair program, resolve complex features, and automate backend debugging."
+            },
+            cursor: {
+                name: "Ollama Local LLM",
+                type: "LOCAL AI GATEWAY",
+                stats: "+95 local model orchestration / +90 data privacy",
+                desc: "A lightweight utility for running large language models locally, enabling Saimani to build and test generative AI workflows entirely offline with zero server data leakage."
+            },
+            textract: {
+                name: "Amazon Textract",
+                type: "OPTICAL CLAIRVOYANCE",
+                stats: "+95 Document OCR / +90 Form Parsing",
+                desc: "An AWS tool that reads images or PDF files to automatically extract printed characters (OCR) and tables into digital datasets."
+            },
+            comprehend: {
+                name: "Amazon Comprehend",
+                type: "EMPATHETIC SENSOR",
+                stats: "+90 NLP / +88 Sentiment Detection",
+                desc: "An AWS text analytics service that extracts key points, structures semantic keywords, and conducts natural language processing (NLP)."
+            },
+            splunk: {
+                name: "Splunk Observability",
+                type: "PRODUCTION ORACLE",
+                stats: "+94 Log Digging / +90 Incident Resolution",
+                desc: "A system monitoring utility used to comb through application server logs to diagnose and resolve production incidents."
+            },
+            servicenow: {
+                name: "ServiceNow Desk",
+                type: "ORGANIZATIONAL BEACON",
+                stats: "+90 Incident Management / +88 Ticket Clears",
+                desc: "A service management tool used systematically to track customer issues, incidents, and workflow assignments."
+            },
+            sql: {
+                name: "SQL Relational Spell",
+                type: "RELATIONAL ANCHOR",
+                stats: "+95 Database Uptime / +92 Index Tuning",
+                desc: "The standard database query language used to create tables, manage relational records, and tune index queries for fast speeds."
+            }
+        };
+
+        function inspectSkill(skillId) {
+            playSynthSound('click');
+            
+            // Highlight slot
+            const slots = document.querySelectorAll('.inventory-slot');
+            slots.forEach(s => s.classList.remove('equipped'));
+            
+            const selectedSlot = document.getElementById(`slot-${skillId}`);
+            selectedSlot.classList.add('equipped');
+            
+            // Populate Inspector Card
+            const data = SKILLS_DATA[skillId];
+            document.getElementById('item-name').innerText = data.name;
+            document.getElementById('item-type').innerText = data.type;
+            document.getElementById('item-stats').innerText = data.stats;
+            document.getElementById('item-desc').innerText = data.desc;
+        }
+
+        // ----------------------------------------------------
+        // Legendary Projects Inspector System
+        // ----------------------------------------------------
+        const PROJECTS_DATA = {
+            analyzer: {
+                title: "Job Analyzer [Vibecoded]",
+                tech: "Python / GPT-4 / AWS Lambda / Textract",
+                desc: "Developed an AI-powered application integrating LLM-based analysis (GPT-4) and AWS Natural Language Processing (NLP) to optimize resume-to-job matching. Built a serverless Python REST API using AWS Lambda and API Gateway, using Amazon Textract for OCR and Comprehend for NLP."
+            },
+            onetool: {
+                title: "OneTool (Universal Indian Utility Hub) [Vibecoded]",
+                tech: "Python / JS / Aadhaar & Passport APIs / LLM APIs",
+                desc: "<span style='color: var(--accent-pink); font-weight: bold;'>[STATUS: IN PROGRESS]</span> - A unified, mega-toolbox application designed to assist Indian students, developers, and citizens. Integrates quick daily tools like Aadhaar & passport status downloaders, music/PDF editors, and consolidated API access to popular LLMs (GPT, Claude, LLAMA) all in a single dashboard."
+            },
+            metalcrash: {
+                title: "Leaf & Beam (Construction & Interior) [Vibecoded]",
+                tech: "HTML5 / CSS3 / JavaScript / Google Apps Script",
+                desc: "<span style='color: var(--accent-cyan); font-weight: bold;'>[STATUS: COMPLETED CLIENT SITE]</span> - A clean, fast, and gorgeous landing page built for a modern construction and interior design company. Features fully responsive sections, micro-animations, and a highly optimized contact form that automatically captures and saves client inquiries directly into a private Google Sheets spreadsheet database using custom Google Apps Script integration."
+            },
+            github: {
+                title: "GitHub Repository Inventory",
+                tech: "GitHub: @saimani-s",
+                desc: "Many other open-source tools, shell configurations, utility scripts, and automation playgrounds. Explore the complete collection of active code drops directly on my public profile: <a href='https://github.com/saimani-s' target='_blank' style='color: var(--accent-cyan); font-weight:bold;'>github.com/saimani-s</a>"
+            }
+        };
+
+        function inspectProject(projId) {
+            playSynthSound('click');
+            
+            // Highlight active button
+            const buttons = document.querySelectorAll('.project-gear-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`projbtn-${projId}`).classList.add('active');
+            
+            // Update Card Details
+            const data = PROJECTS_DATA[projId];
+            document.getElementById('proj-title').innerHTML = data.title;
+            document.getElementById('proj-tech').innerText = data.tech;
+            document.getElementById('proj-desc').innerHTML = data.desc;
+            
+            // Update Battle combat logs for gamified immersion!
+            addCombatLog(`Equipped artifact: ${data.title}! Battle modifiers updated.`);
+        }
+
+        // ----------------------------------------------------
+        // ----------------------------------------------------
+        // Boss Battle Game Engine (Job Analyzer Arena)
+        // ----------------------------------------------------
+        let heroHp = 100;
+        let heroMp = 80;
+        let bossHp = 800;
+        const maxBossHp = 800;
+        let isCombatActive = true;
+
+        function addCombatLog(message) {
+            const box = document.getElementById('combat-logs');
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.innerText = message;
+            box.appendChild(entry);
+            box.scrollTop = box.scrollHeight;
+        }
+
+        function flashArena(colorClass) {
+            const arena = document.getElementById('arena-flash');
+            arena.classList.add(colorClass);
+            setTimeout(() => { arena.classList.remove(colorClass); }, 300);
+        }
+
+        function shakeBoss() {
+            const boss = document.getElementById('boss-actor');
+            boss.classList.add('boss-hit-shake');
+            setTimeout(() => { boss.classList.remove('boss-hit-shake'); }, 400);
+        }
+
+        function castSpell(spellId) {
+            if (!isCombatActive) {
+                addCombatLog("Battle is already over! Click REBOOT ARENA to revive, or HIRE HERO to get in touch.");
+                playSynthSound('click');
+                return;
+            }
+
+            initAudio();
+
+            // MP Checks
+            if (spellId === 'gpt4' && heroMp < 30) {
+                playSynthSound('hit');
+                addCombatLog("⚠️ NOT ENOUGH MP! Summoning GPT-4 requires 30 AI Compute (MP). Cast Spring Barrier to recharge!");
+                return;
+            }
+            if (spellId === 'sql' && heroMp < 15) {
+                playSynthSound('hit');
+                addCombatLog("⚠️ NOT ENOUGH MP! SQL Index Tuning requires 15 AI Compute (MP). Cast Spring Barrier to recharge!");
+                return;
+            }
+
+            if (spellId === 'java') {
+                // Java Strike
+                playSynthSound('laser');
+                const dmg = Math.floor(Math.random() * 50) + 60;
+                bossHp = Math.max(0, bossHp - dmg);
+                shakeBoss();
+                flashArena('flash-red');
+                addCombatLog(`Saimani casts JAVA STRIKE! Deals ${dmg} backend damage! The Resume Filter's stability decreases.`);
+            } 
+            else if (spellId === 'spring') {
+                // Spring Barrier (Heals HP and Recharges MP!)
+                playSynthSound('heal');
+                heroHp = Math.min(100, heroHp + 25);
+                heroMp = Math.min(100, heroMp + 20);
+                flashArena('flash-cyan');
+                addCombatLog(`Saimani conjures SPRING BARRIER! Restores 25 HP and recharges 20 MP. Health checks are green!`);
+            } 
+            else if (spellId === 'gpt4') {
+                // Summon GPT-4 (Consumes 30 MP)
+                playSynthSound('levelup');
+                heroMp -= 30;
+                const dmg = Math.floor(Math.random() * 120) + 100;
+                bossHp = Math.max(0, bossHp - dmg);
+                shakeBoss();
+                flashArena('flash-red');
+                addCombatLog(`Saimani summons GPT-4 COGNITIVE BEAM! Deals ${dmg} massive AI damage! (Consumed 30 MP)`);
+            } 
+            else if (spellId === 'sql') {
+                // Optimize SQL (Consumes 15 MP)
+                playSynthSound('laser');
+                heroMp -= 15;
+                const dmg = Math.floor(Math.random() * 40) + 40;
+                bossHp = Math.max(0, bossHp - dmg);
+                heroHp = Math.min(100, heroHp + 10);
+                shakeBoss();
+                flashArena('flash-cyan');
+                addCombatLog(`Saimani runs SQL INDEX TUNING! Resolves database rows, dealing ${dmg} damage and repairing 10 HP. (Consumed 15 MP)`);
+            }
+
+            // Update stats view
+            updateCombatUI();
+
+            // Check Win Condition
+            if (bossHp <= 0) {
+                handleCombatVictory();
+                return;
+            }
+
+            // Enemy Turn
+            setTimeout(executeBossTurn, 1000);
+        }
+
+        function executeBossTurn() {
+            if (!isCombatActive) return;
+
+            const moves = [
+                { name: "Legacy System Bug", dmg: 15, msg: "The Resume Filter unleashes LEGACY SYSTEM BUG! Saimani's deployment loses speed!" },
+                { name: "Spaghetti Code Loop", dmg: 20, msg: "The Filter traps Saimani in an infinite SPAGHETTI CODE LOOP!" },
+                { name: "Recruiter Silence", dmg: 10, msg: "The Filter casts RECRUITER SILENCE! Saimani endures ghosting damage." }
+            ];
+
+            const move = moves[Math.floor(Math.random() * moves.length)];
+            heroHp = Math.max(0, heroHp - move.dmg);
+            playSynthSound('hit');
+            flashArena('flash-red');
+            addCombatLog(move.msg + ` Deals ${move.dmg} HP damage.`);
+
+            updateCombatUI();
+
+            // Check Lose Condition
+            if (heroHp <= 0) {
+                handleCombatDefeat();
+            }
+        }
+
+        function updateCombatUI() {
+            // Update Boss HP
+            const bossHpPct = (bossHp / maxBossHp) * 100;
+            document.getElementById('combat-boss-hp').style.width = `${bossHpPct}%`;
+            document.getElementById('combat-boss-hp-text').innerText = bossHp;
+
+            // Update Hero HP
+            document.getElementById('combat-hero-hp').style.width = `${heroHp}%`;
+            document.getElementById('combat-hero-hp-text').innerText = heroHp;
+
+            // Update Status Section HP
+            document.getElementById('status-hp-bar').style.width = `${heroHp}%`;
+            document.getElementById('status-hp-val').innerText = `${heroHp}/100`;
+
+            // Update Status Section MP (Dynamic!)
+            document.getElementById('status-mp-bar').style.width = `${heroMp}%`;
+            document.getElementById('status-mp-val').innerText = `${heroMp}/100`;
+        }
+
+        function handleCombatVictory() {
+            isCombatActive = false;
+            playSynthSound('levelup');
+            addCombatLog("VICTORY! Saimani successfully bypassed the Resume Filter! The recruiters are astounded!");
+            addCombatLog("Loot Acquired: Job Offer Invitation [LEGENDARY].");
+            
+            // Show retry board
+            document.getElementById('retry-board').style.display = 'block';
+            
+            // Trigger 300 XP gain
+            setTimeout(() => {
+                addExperience(300, null);
+                addCombatLog("+300 XP awarded to Saimani!");
+            }, 1200);
+        }
+
+        function handleCombatDefeat() {
+            isCombatActive = false;
+            playSynthSound('hit');
+            addCombatLog("DEFEAT! Saimani was overwhelmed by Legacy Spaghettius.");
+            addCombatLog("Click 'REBOOT ARENA / REVIVE HERO' below to revive Saimani and try again!");
+            
+            // Show retry board
+            document.getElementById('retry-board').style.display = 'block';
+        }
+
+        function resetBattle() {
+            playSynthSound('heal');
+            heroHp = 100;
+            heroMp = 80; // Reset MP
+            bossHp = 800;
+            isCombatActive = true;
+            
+            // Hide retry board
+            document.getElementById('retry-board').style.display = 'none';
+            
+            // Reset UI
+            updateCombatUI();
+            
+            // Clear logs
+            const box = document.getElementById('combat-logs');
+            box.innerHTML = '<div class="log-entry">Arena rebooted! Saimani is revived with 100/100 HP and 80/100 MP. Battle the Legacy Filter!</div>';
+        }
+
+
+        function showBattleInstructions() {
+            playSynthSound('click');
+            initAudio();
+            document.getElementById('battle-instructions-screen').style.display = 'flex';
+        }
+
+        function hideBattleInstructions() {
+            playSynthSound('click');
+            document.getElementById('battle-instructions-screen').style.display = 'none';
+        }
+
+        function showStatsInfo() {
+            playSynthSound('click');
+            initAudio();
+            document.getElementById('stats-info-screen').style.display = 'flex';
+        }
+
+        function hideStatsInfo() {
+            playSynthSound('click');
+            document.getElementById('stats-info-screen').style.display = 'none';
+        }
+
+
+        function openContactModal(e) {
+            if (e) e.preventDefault();
+            playSynthSound('levelup');
+            initAudio();
+            document.getElementById('contact-modal-screen').style.display = 'flex';
+        }
+
+        function closeContactModal() {
+            playSynthSound('click');
+            document.getElementById('contact-modal-screen').style.display = 'none';
+        }
+
+        function copyEmailToClipboard() {
+            const email = "saimani.singirikonda@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                playSynthSound('coin');
+                const copyBtn = document.getElementById('copy-email-btn');
+                const originalText = copyBtn.innerText;
+                copyBtn.innerText = "✔️ COPIED!";
+                copyBtn.classList.remove('yellow-btn');
+                copyBtn.classList.add('cyan-btn');
+                setTimeout(() => {
+                    copyBtn.innerText = originalText;
+                    copyBtn.classList.remove('cyan-btn');
+                    copyBtn.classList.add('yellow-btn');
+                }, 2000);
+            }).catch(err => {
+                console.error('Could not copy email: ', err);
+            });
+        }
+
+
+
+
+        // ----------------------------------------------------
+        // Interactive CRT Console Terminal
+        // ----------------------------------------------------
+        const terminalScreen = document.getElementById('terminal-screen');
+        const terminalInput = document.getElementById('term-input');
+
+        terminalInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const commandText = terminalInput.value.trim().toLowerCase();
+                terminalInput.value = "";
+                
+                if (commandText === "") return;
+                
+                playSynthSound('click');
+                processTerminalCommand(commandText);
+            }
+        });
+
+        function appendTerminalLine(text, type = '') {
+            const line = document.createElement('div');
+            if (type === 'prompt') {
+                line.innerHTML = `<span class="terminal-prompt"><span class="terminal-prompt-user">visitor@</span>saimani-os:~$</span> ${text}`;
+            } else if (type === 'error') {
+                line.innerHTML = `<span style="color: var(--accent-pink); font-weight:bold;">[ERROR]</span> ${text}`;
+            } else if (type === 'success') {
+                line.innerHTML = `<span style="color: var(--accent-yellow); font-weight:bold;">[SUCCESS]</span> ${text}`;
+            } else {
+                line.innerHTML = text;
+            }
+            terminalScreen.appendChild(line);
+            terminalScreen.scrollTop = terminalScreen.scrollHeight;
+        }
+
+        function processTerminalCommand(cmd) {
+            appendTerminalLine(cmd, 'prompt');
+
+            switch (cmd) {
+                case 'help':
+                    appendTerminalLine("AVAILABLE COMMANDS:");
+                    appendTerminalLine("==============================================");
+                    appendTerminalLine("  <span style='color: var(--accent-cyan);'>about</span>      - Output Saimani's detailed background bio.");
+                    appendTerminalLine("  <span style='color: var(--accent-cyan);'>skills</span>     - Output entire list of developer weapons.");
+                    appendTerminalLine("  <span style='color: var(--accent-cyan);'>quests</span>     - Output active and completed recruiter missions.");
+                    appendTerminalLine("  <span style='color: var(--accent-cyan);'>contact</span>    - Print secure coordinates (Email, GitHub, LinkedIn).");
+                    appendTerminalLine("  <span style='color: var(--accent-cyan);'>boss</span>       - Fast scroll direct into the Boss Arena mini-game.");
+                    appendTerminalLine("  <span style='color: var(--accent-cyan);'>levelup</span>    - Force-hack Saimani to level up instantly (+1 Level).");
+                    appendTerminalLine("  <span style='color: var(--accent-cyan);'>clear</span>      - Clear operating system screen logs.");
+                    appendTerminalLine("==============================================");
+                    break;
+                case 'about':
+                    appendTerminalLine("SOFTWARE ENGINEER &amp; AI SPECIALIST PORTRAIT:");
+                    appendTerminalLine("Saimani develops ultra-reliable, concurrent backend services in Java and Spring Boot. Heavily specialized in database tuning (GCP BigQuery) and serverless infrastructures (AWS Lambda). Integrates advanced LLMs like GPT-4 and Claude to forge semantic solutions.");
+                    break;
+                case 'skills':
+                    appendTerminalLine("INVENTORY WEAPONS:");
+                    appendTerminalLine("- CORE LANGUAGES: Java, Python, JavaScript, SQL");
+                    appendTerminalLine("- FRAMES/APIS: Spring Boot, REST APIs, Microservices");
+                    appendTerminalLine("- CLOUD/SYSTEMS: GCP (BigQuery), AWS (S3, Lambda), Red Hat OpenShift");
+                    appendTerminalLine("- ARTIFICIAL COGNITION: OpenAI GPT-4, Claude, Antigravity AI, Ollama");
+                    appendTerminalLine("- COGNITIVE APIS: Amazon Textract (OCR), Amazon Comprehend (NLP)");
+                    appendTerminalLine("- OBSERVABILITY: Splunk logs, ServiceNow desk");
+                    break;
+                case 'quests':
+                    appendTerminalLine("ACTIVE QUESTS:");
+                    appendTerminalLine("- [Capgemini] Resolve search &amp; listing products visibility on GCP BigQuery.");
+                    appendTerminalLine("COMPLETED QUESTS:");
+                    appendTerminalLine("- [Capgemini] Built REST microservices on Java &amp; OpenShift. Splunk logs debugging.");
+                    break;
+                case 'contact':
+                    appendTerminalLine("Opening secure communications portal...", 'success');
+                    openContactModal();
+                    break;
+                case 'boss':
+                    appendTerminalLine("Scrolling to Boss Arena...", 'success');
+                    document.getElementById('boss-section').scrollIntoView({ behavior: 'smooth' });
+                    break;
+                case 'levelup':
+                    appendTerminalLine("Executing buffer override hack... Leveling up!", 'success');
+                    addExperience(maxXp, null);
+                    break;
+                case 'clear':
+                    terminalScreen.innerHTML = "";
+                    appendTerminalLine("Terminal logs cleared. Type 'help' for instructions.");
+                    break;
+                default:
+                    appendTerminalLine(`Unknown command: '${cmd}'. Type 'help' to review console commands.`, 'error');
+            }
+        }
+
+        // ----------------------------------------------------
+        // Carousel Browser Tab Title Ticker
+        // ----------------------------------------------------
+        (function() {
+            let titleText = "Hellooo! 👾 Thankyou  visit again! 🎮 ";
+            setInterval(function() {
+                titleText = titleText.substring(1) + titleText.substring(0, 1);
+                document.title = titleText;
+            }, 300); // Back to a comfortable retro pace for a short title
+        })();
+    </script>
+</body>
 </html>
