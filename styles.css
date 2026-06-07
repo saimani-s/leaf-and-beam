@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #F8F7F3;
-    --text-color: #2C352D;
-    --primary-color: #384A3B;
+    --bg-color: #F8F7F3; /* Original light beige */
+    --text-color: #2C352D; /* Original dark green-black */
+    --primary-color: #384A3B; /* Brand primary green */
     --accent-color: #C0A080;
     --white: #FFFFFF;
-    --border-color: #E2DFD8;
+    --border-color: #E2DFD8; /* Original light border */
     --transition: all 0.3s ease;
 }
 
@@ -54,7 +54,7 @@ h3 {
 p {
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    color: #4A554C;
+    color: #4A554C; /* Original dark gray-green */
 }
 
 a {
@@ -73,7 +73,7 @@ a {
 
 /* Navbar */
 .navbar {
-    background-color: rgba(248, 247, 243, 0.95);
+    background-color: rgba(248, 247, 243, 0.95); /* Original light translucent */
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -107,12 +107,16 @@ a {
     align-items: center;
 }
 
+.nav-links a {
+    color: var(--text-color);
+}
+
 .nav-links a:hover {
     color: var(--accent-color);
 }
 
 .btn-nav {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Original primary green */
     color: var(--white) !important;
     padding: 0.8rem 1.5rem !important;
     border-radius: 30px;
@@ -126,6 +130,7 @@ a {
 
 .btn-nav:hover {
     background-color: var(--text-color);
+    color: var(--white) !important;
 }
 
 .hamburger {
@@ -609,10 +614,6 @@ footer {
     .hero {
         padding-top: 8rem;
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     h1 {
